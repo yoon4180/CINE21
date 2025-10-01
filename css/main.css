@@ -1,0 +1,403 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+/* font-family: "Allerta Stencil", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* font-family: "Anton", sans-serif; */
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    font-display: swap;
+    src: local('Pretendard Black'), url(../font/Pretendard/Pretendard-Black.woff2) format('woff2'), url(../font/Pretendard/Pretendard-Black.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-display: swap;
+    src: local('Pretendard ExtraBold'), url(../font/Pretendard/Pretendard-ExtraBold.woff2) format('woff2'), url(../font/Pretendard/Pretendard-ExtraBold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    src: local('Pretendard Bold'), url(../font/Pretendard/Pretendard-Bold.woff2) format('woff2'), url(../font/Pretendard/Pretendard-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-display: swap;
+    src: local('Pretendard SemiBold'), url(../font/Pretendard/Pretendard-SemiBold.woff2) format('woff2'), url(../font/Pretendard/Pretendard-SemiBold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-display: swap;
+    src: local('Pretendard Medium'), url(../font/Pretendard/Pretendard-Medium.woff2) format('woff2'), url(../font/Pretendard/Pretendard-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-display: swap;
+    src: local('Pretendard Regular'), url(../font/Pretendard/Pretendard-Regular.woff2) format('woff2'), url(../font/Pretendard/Pretendard-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-display: swap;
+    src: local('Pretendard Light'), url(../font/Pretendard/Pretendard-Light.woff2) format('woff2'), url(../font/Pretendard/Pretendard-Light.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    font-display: swap;
+    src: local('Pretendard ExtraLight'), url(.../font/Pretendard/Pretendard-ExtraLight.woff2) format('woff2'), url(../font/Pretendard/Pretendard-ExtraLight.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    font-display: swap;
+    src: local('Pretendard Thin'), url(../font/Pretendard/Pretendard-Thin.woff2) format('woff2'), url(../font/Pretendard/Pretendard-Thin.woff) format('woff');
+}
+
+body {
+    line-height: normal;
+    font-family: 'pretendard';
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ----- 헤더 ----- */
+.header {
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.7);
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.header .inner {
+    max-width: 1264px;
+    width: calc(100% - 20px);
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .inner .logo {
+    width: 120px;
+}
+
+.header .inner .logo a {
+    width: 100%;
+    display: block;
+}
+
+.header .inner .logo a img {
+    width: 100%;
+}
+
+.header .inner .nav {
+    display: flex;
+    gap: 10px;
+}
+
+.header .inner .nav>li {
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header .inner .nav>li .depth-01 {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .inner .nav>li .depth-01.sub_btn {
+    background-color: #FEE379;
+    color: #333;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.header .inner .nav>li:hover .depth-01.sub_btn {
+    background-color: #333;
+    color: #FEE379;
+    border: 1px solid #FEE379;
+}
+
+.header .inner .nav>li .depth-02 {
+    min-width: 130px;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header .inner .nav>li:hover .depth-02 {
+    display: flex;
+}
+
+.header .inner .nav li .depth-02 li a {
+    color: #c0c0c0;
+    display: block;
+}
+
+.header .inner .nav li .depth-02 li:hover a {
+    color: #fff;
+}
+
+.header .inner .util {
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.header .inner .util .login {
+    width: 60px;
+    height: 100%;
+    color: #ffffff;
+    padding: 0;
+}
+
+.header .inner .util .search_btn {
+    height: 100%;
+    padding: 0 5px;
+}
+
+.header .inner .util .search_btn img {
+    width: 26px;
+    display: block;
+}
+
+.header .inner .util .search_box {
+    width: 320px;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+}
+
+.header .inner .util .search_box input {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: 0;
+}
+
+
+/* ---- section0 ----- */
+/* slide1 */
+#section0 #slide1 .intro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#section0 #slide1 .intro>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#section0 #slide1 .intro video {
+    height: calc(100% - 80px);
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* slide2 */
+#section0 #slide2 {
+    position: relative;
+}
+
+#section0 .background img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    z-index: -1;
+}
+
+#section0 .background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 228, 223, 0.2);
+    pointer-events: none;
+}
+
+#section0 .inner {
+    width: calc(100% - 400px);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#section0 .inner .content {
+    max-width: 521px;
+}
+
+#section0 .inner .content .text_wrap {
+    background-color: rgba(225, 228, 219, 0.7);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px 24px;
+}
+
+#section0 .content .text_wrap .title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+    padding-left: 6px;
+}
+
+#section0 .inner .content .text_wrap .title span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#section0 .inner .content .text_wrap .title h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#section0 .inner .content .text_wrap ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 300;
+}
+
+#section0 .inner .content .text_wrap ul li::before {
+    content: '· ';
+    font-weight: bold;
+}
+
+#section0 .inner .content .content_btn {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#section0 .inner .content .content_btn p {}
+
+#section0 .inner .content .content_btn .btn01 {
+    padding: 18px;
+    background-color: #C18C8E;
+    color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+#section0 .inner .content .content_btn .btn01:hover {
+    background-color: #af686b;
+}
+
+#section0 .inner .content .content_btn .btn02 {
+    padding: 18px 25px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+#section0 .inner .content .content_btn .btn02:hover {
+    background-color: #96a7b6;
+}
+
+#section0 .inner .cover_img {
+    width: 483px;
+    box-shadow: 25px 30px 20px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#section0 .inner .cover_img a {
+    width: 100%;
+    display: block;
+}
+
+#section0 .inner .cover_img a>img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#section0 .inner .cover_img:hover {
+    animation: floatUp 0.5s ease-out;
+}
+
+@keyframes floatUp {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); } /* 위로 10px */
+  100% { transform: translateY(0); }
+}
+
+/* slide3 */
+#section0 #slide3 {
+    position: relative;
+}
+
+#section0 #slide3 .background::after {
+    background-color: rgba(201, 175, 141, 0.2);
+}
+
+#section0 #slide3 .inner .content .text_wrap {
+    background-color: rgba(201, 175, 141, 0.7);
+}
+
+#section0 #slide3 .inner .content .content_btn .btn01 {
+    background-color: #DA7B49;
+}
+
+#section0 #slide3 .inner .content .content_btn .btn01:hover {
+    background-color: #b35b2d;
+}
+
+#section0 #slide3 .inner .content .content_btn .btn02:hover {
+    background-color: #c0ac8e;
+}
+
+/* ----- section1 ----- */

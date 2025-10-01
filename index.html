@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>씨네21 리디자인</title>
+    <link rel="stylesheet" href="lib/fullpage.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="lib/fullpage.js"></script>
+    <script>
+        window.onload = () => {
+            /* 풀페이지 */
+            var myFullpage = new fullpage('#fullpage', {
+                anchors: ['1', '2', '3', '4', '5'],
+                menu: '#menu',
+                slidesNavigation: true,
+                lazyLoad: true,
+                credits: { enabled: false }
+            });
+
+            /* 헤더 */
+            let searchBtn = document.querySelector('.search_btn');
+            let searchBox = document.querySelector('.search_box');
+
+            searchBtn.addEventListener('click', () => {
+                if (searchBox.style.display === '' || searchBox.style.display === 'none') {
+                    searchBox.style.display = 'block';
+                } else if (searchBox.style.display === 'block') {
+                    searchBox.style.display = 'none';
+                }
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+
+            <h1 class="logo">
+                <a href="#"><img src="img/logo_fff.png" alt="로고"></a>
+            </h1><!-- logo -->
+
+            <nav class="nav">
+                <li>
+                    <a href="#" class="depth-01">기사</a>
+                    <ul class="depth-02">
+                        <li><a href="#">기사</a></li>
+                        <li><a href="#">뉴스</a></li>
+                        <li><a href="#">영화제 데일리</a></li>
+                    </ul><!-- depth-02 -->
+                </li>
+                <li>
+                    <a href="#" class="depth-01">포토&영상</a>
+                    <ul class="depth-02">
+                        <li><a href="#">씨네21 포토</a></li>
+                        <li><a href="#">씨네21 영향</a></li>
+                        <li><a href="#">최신영상</a></li>
+                    </ul><!-- depth-02 -->
+                </li>
+                <li>
+                    <a href="#" class="depth-01">영화</a>
+                    <ul class="depth-02">
+                        <li><a href="#">별점</a></li>
+                        <li><a href="#">영화</a></li>
+                        <li><a href="#">영화랭킹</a></li>
+                        <li><a href="#">인물</a></li>
+                    </ul><!-- depth-02 -->
+                </li>
+                <li>
+                    <a href="#" class="depth-01">시리즈</a>
+                </li>
+                <li>
+                    <a href="#" class="depth-01">이벤트</a>
+                    <ul class="depth-02">
+                        <li><a href="#">시사회&이벤트</a></li>
+                        <li><a href="#">시사회 표 나눔터</a></li>
+                        <li><a href="#">씨네퀴즈</a></li>
+                    </ul><!-- depth-02 -->
+                </li>
+                <li>
+                    <a href="#" class="depth-01">영화인 JOB</a>
+                </li>
+                <li>
+                    <a href="#" class="depth-01 sub_btn">정기구독</a>
+                    <ul class="depth-02">
+                        <li><a href="#">정기구독 신청</a></li>
+                        <li><a href="#">씨네21 아카이브</a></li>
+                        <li><a href="#">구독 관리</a></li>
+                    </ul><!-- depth-02 -->
+                </li>
+            </nav><!-- nav -->
+
+            <div class="util">
+                <button class="login">로그인</button>
+                <button class="search_btn">
+                    <img src="img/icon_search.png" alt="검색">
+                </button>
+                <div class="search_box">
+                    <input type="text" name="" id="">
+                </div><!-- search_box -->
+            </div><!-- util -->
+
+        </div><!-- inner -->
+    </header><!-- header -->
+
+
+    <div id="fullpage">
+        <div class="section active" id="section0">
+
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <img src="img/MFLS_photo1.png" alt="메인비주얼 배경">
+                    <video src="img/1525MFLS.mp4" autoplay muted loop></video>
+                </div><!-- intro -->
+            </div><!-- slide1 -->
+
+            <div class="slide active" id="slide2">
+                <div class="background">
+                    <img src="img/bg1.jpg" alt="배경">
+                </div><!-- background -->
+                <div class="inner">
+                    <div class="content">
+                        <div class="text_wrap">
+                            <div class="title">
+                                <span>1525호</span>
+                                <h2>AI 영화, 영화제의 특이점</h2>
+                                <span>2025-09-23 ~ 2025-09-30</span>
+                            </div><!-- title -->
+                            <ul>
+                                <li>AI 영화, 영화제의 특이점 경북 AI 영상제부터 KAFA AI 영화 쇼케이스까지</li>
+                                <li>박찬욱 감독의 신자유주의 블랙코미디 <어쩔수가없다>
+                                </li>
+                                <li>
+                                    <얼굴> 연상호 감독 인터뷰
+                                </li>
+                                <li>시즌4 맞은 Apple TV+ <더 모닝 쇼>
+                                </li>
+                                <li>조영민 감독이 말하는 <은중과 상연>의 매력</li>
+                                <li>크리틱 박홍열 촬영감독의 <콜 미 바이 유어 네임>
+                                </li>
+                                <li>오진우 평론가의 <다른 것으로 알려질 뿐이지>
+                                </li>
+                                <li>COVER <어쩌면 해피엔딩> 배우 신주협, 강혜인</li>
+                            </ul>
+                        </div><!-- text_wrap -->
+                        <div class="content_btn">
+                            <button class="btn01">
+                                <p>2주 무료체험 신청하기</p>
+                            </button>
+                            <button class="btn02">
+                                <p>정기구독 하기</p>
+                            </button>
+                        </div><!-- content_btn -->
+                    </div><!-- content -->
+                    <div class="cover_img">
+                        <a href="#"><img src="img/no1525.jpg" alt="1525호 표지"></a>
+                    </div><!-- cover_img -->
+                </div><!-- inner -->
+            </div><!-- slide2 -->
+
+            <div class="slide active" id="slide3">
+                <div class="background">
+                    <img src="img/bg1.jpg" alt="배경">
+                </div><!-- background -->
+                <div class="inner">
+                    <div class="content">
+                        <div class="text_wrap">
+                            <div class="title">
+                                <span>1524호</span>
+                                <h2>다큐멘터리 거장 프레더릭 와이즈먼의 세계</h2>
+                                <span>2025-09-16 ~ 2025-09-23</span>
+                            </div><!-- title -->
+                            <ul>
+                                <li>다큐멘터리 거장 프레더릭 와이즈먼의 세계 DMZ국제다큐멘터리영화제 기획전부터 45편 전작 순회 회고전까지</li>
+                                <li>배우 조여정의 모든 것</li>
+                                <li>충무로영상센터 오!재미동의 어제와 오늘, 그리고 내일</li>
+                                <li>가수 윤덕원, 산문집 <열심히 대충 쓰는 사람>으로 돌아오다</li>
+                                <li>내한 뮤지컬 <위키드> 코트니 몬스마, 셰리든 애덤스 인터뷰</li>
+                                <li>크리틱 문주화 평론가의 <3학년 2학기>
+                                </li>
+                                <li>오진우 평론가의 <다른 것으로 알려질 뿐이지>
+                                </li>
+                                <li>COVER <은중과 상연> 배우 김고은, 박지현</li>
+                            </ul>
+                        </div><!-- text_wrap -->
+                        <div class="content_btn">
+                            <button class="btn01">
+                                <p>2주 무료체험 신청하기</p>
+                            </button>
+                            <button class="btn02">
+                                <p>정기구독 하기</p>
+                            </button>
+                        </div><!-- content_btn -->
+                    </div><!-- content -->
+                    <div class="cover_img">
+                        <a href="#"><img src="img/no1524.jpg" alt="1525호 표지"></a>
+                    </div><!-- cover_img -->
+                </div><!-- inner -->
+            </div><!-- slide3 -->
+            
+        </div><!-- #section0 -->
+
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>Slide 2.1</h1>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="intro">
+                    <h1>Slide 2.2</h1>
+                    <p>
+                        We are using the class `active` on this section and in this particular horizontal slide. This
+                        way it will appear on the viewport on page load, instead of the 1st section 1st slide.
+                    </p>
+                    <p>You can apply the same logic to horizontal slides</p>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <h1>Slide 2.3</h1>
+            </div>
+
+        </div><!-- #section1 -->
+
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>Section 3</h1>
+            </div>
+        </div><!-- #section2 -->
+    </div><!-- fullpage -->
+</body>
+
+</html>
