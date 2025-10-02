@@ -77,6 +77,10 @@ li {
     list-style: none;
 }
 
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
 
 /* ----- 헤더 ----- */
 .header {
@@ -281,6 +285,7 @@ li {
     background-color: rgba(225, 228, 219, 0.7);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     padding: 20px 24px;
+    border-radius: 10px;
 }
 
 #section0 .content .text_wrap .title {
@@ -294,11 +299,6 @@ li {
 #section0 .inner .content .text_wrap .title span {
     font-size: 14px;
     font-weight: 300;
-}
-
-#section0 .inner .content .text_wrap .title h2 {
-    font-size: 25px;
-    font-weight: 700;
 }
 
 #section0 .inner .content .text_wrap ul {
@@ -370,9 +370,18 @@ li {
 }
 
 @keyframes floatUp {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-15px); } /* 위로 10px */
-  100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    /* 위로 10px */
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* slide3 */
@@ -400,5 +409,359 @@ li {
     background-color: #ffffff;
 }
 
-/* ----- section1 ----- */
-#section1 
+/* ---- section1 ----- */
+/* slide1 */
+#section1 #slide1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#section1 #slide1 .bg {
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#section1 .inner {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#section1 .inner .left {
+    width: 40%;
+    height: 733px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#section1 .inner .left .title {
+    max-width: 500px;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+#section1 .inner .left .cover_image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+#section1 .inner .left .cover_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#section1 .inner .left .cover_image a {
+    padding: 8px 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+}
+
+#section1 .inner .left .cover_image a>img {
+    width: 16px;
+    height: 16px;
+}
+
+
+#section1 .inner .right {
+    width: 40%;
+    height: 733px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#section1 .inner .right .content01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#section1 .inner .right .content01 img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+#section1 .inner .right .content01 strong {
+    font-family: "Anton", sans-serif;
+    font-size: 150px;
+    color: #333333;
+    line-height: 1;
+}
+
+#section1 .inner .right .content02 {
+    height: 274px;
+}
+
+#section1 .inner .right .content02 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#section1 .inner .right .content03 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#section1 .inner .right .content03 p {
+    width: 49%;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333333;
+}
+
+#section1 .inner .right .content03 img {
+    flex: 1;
+    height: 234px;
+    object-fit: cover;
+    object-position: 50% 0;
+}
+
+/* slide2 */
+#section1 #slide2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#section1 #slide2 .bg {
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#section1 #slide2 .inner .right .content02 {
+    flex: 1;
+}
+
+#section1 #slide2 .inner .right .content03 p {
+    width: 100%;
+}
+
+
+/* ---- section2 ----- */
+/* slide1 */
+#section2 .inner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#section2 .inner>img {
+    width: 81.25%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+#section2 .inner .overlay {
+    width: 960px;
+    height: 100vh;
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#section2 .inner .overlay .text {
+    width: 450px;
+    color: #ffffff;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+#section2 .inner .overlay .text p {
+    line-height: 150%;
+    text-align: justify;
+}
+
+#section2 .inner .overlay .text .more_btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#section2 .inner .overlay .text .more_btn span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#section2 .inner .overlay .text .more_btn img {
+    width: 15px;
+    height: 15px;
+}
+
+
+/* ---- section3 ----- */
+#section3 {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg.png') center center;
+}
+
+#section3 .inner {
+    margin: 100px 0 0 200px;
+}
+#section3 .inner .title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#section3 .inner .title h3 {
+    font-family: "Anton", sans-serif;
+    font-size: 80px;
+    color: #ffffff;
+    line-height: 1;
+}
+#section3 .inner .title img {
+    width: 50px;
+    height: 62px;
+}
+
+#section3 .inner .boxoffice_slide {}
+#section3 .inner .swiper-slide {
+    color: #ffffff;
+}
+
+#section3 .inner .swiper-slide .poster {
+    width: 320px;
+    height: 457px;
+    position: relative;
+}
+#section3 .inner .swiper-slide .poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+#section3 .inner .swiper-slide .poster strong {
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 65px;
+    line-height: 1;
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+}
+
+/* poster위에 올라올 overlay */
+#section3 .inner .swiper-slide .poster .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+}
+#section3 .inner .swiper-slide .poster:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+#section3 .inner .swiper-slide .poster .overlay h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 0;
+    border-bottom: 1px solid #ffffff;
+}
+#section3 .inner .swiper-slide .poster .overlay ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+#section3 .inner .swiper-slide .poster .overlay ul li {}
+#section3 .inner .swiper-slide .poster .overlay ul li span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #C44B4B;
+    display: block;
+    margin-bottom: 5px;
+}
+#section3 .inner .swiper-slide .poster .overlay a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #888888;
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#section3 .inner .swiper-slide .content {
+    text-align: center;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#section3 .inner .swiper-slide .content h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#section3 .inner .swiper-slide .content .rank {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+}
+#section3 .inner .swiper-slide .content .rank .star {
+    display: flex;
+    gap: -5px;
+}
+#section3 .inner .swiper-slide .content .rank .star img {
+    width: 22px;
+    margin-right: -5px;
+}
+#section3 .inner .swiper-slide .content .rank p {
+    color: #FEE379;
+}
+
+#section3 .inner .swiper-slide .content .info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}

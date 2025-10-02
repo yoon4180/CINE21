@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>씨네21 리디자인</title>
     <link rel="stylesheet" href="lib/fullpage.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
 
     <script src="lib/fullpage.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         window.onload = () => {
             /* 풀페이지 */
@@ -30,7 +34,17 @@
                 } else if (searchBox.style.display === 'block') {
                     searchBox.style.display = 'none';
                 }
-            })
+            });
+
+            /* 박스오피스 슬라이드 */
+            var swiper = new Swiper(".boxoffice_slide", {
+                slidesPerView: 4.5,
+                spaceBetween: 75,
+                freeMode: true,
+                pagination: {
+                    clickable: true,
+                },
+            });
         }
     </script>
 </head>
@@ -206,30 +220,191 @@
         <div class="section" id="section1">
 
             <div class="slide" id="slide1">
+                <img src="img/book_shadow.png" alt="책그림자" class="bg">
                 <div class="inner">
                     <div class="left">
                         <div class="title">
                             <h2>BIFF #4호 [화보] 가을이 왔고, 별들이 떴다</h2>
                             <p>김소미, 최성열, 백종헌, 박종덕</p>
                         </div><!-- title -->
-                        <img src="img/cover2-1.jpg" alt="BIFF#4 메인이미지">
-                        <button><a href="#">
-                            클릭하여 원문 보기<img src="img/icon_right_000.png" alt="원문보기">
-                        </a></button>
+                        <div class="cover_image">
+                            <img src="img/cover2-1.jpg" alt="BIFF#4 메인이미지">
+                            <a href="#">
+                                클릭하여 원문 보기<img src="img/icon_right_000.png" alt="원문보기">
+                            </a>
+                        </div><!-- cover_image -->
                     </div><!-- left -->
+
+                    <div class="right">
+                        <div class="content01">
+                            <img src="img/cover2-3.jpg" alt="이미지1" class="img01">
+                            <strong>BIFF</strong>
+                        </div><!-- content01 -->
+                        <div class="content02">
+                            <img src="img/cover2-6.jpg" alt="이미지2">
+                        </div><!-- content2 -->
+                        <div class="content03">
+                            <p>주말로 접어든 영화제가 스타들의 열기로 채워지고 있다. 영화의전당 BIFF 야외무대에서 열리는 여러 오픈토크와 동서대학교 소향씨어터 신한카드홀에서 진행된 두
+                                개의 액터스 하우스로 팬들의 걸음이 유독 분주했던 하루. 어느덧 가을의 색으로 멋내고 관객과의 만남을 가진 배우들의 빛나는 면면이 여기 있다.</p>
+                            <img src="img/cover2-5.jpg" alt="이미지3">
+                        </div><!-- content3 -->
+                    </div><!-- right -->
                 </div><!-- inner -->
             </div><!-- #slide1 -->
 
             <div class="slide" id="slide2">
-            </div>
+                <img src="img/book_shadow.png" alt="책그림자" class="bg">
+                <div class="inner">
+                    <div class="left">
+                        <div class="title">
+                            <h2>서로가 더 알고 싶은 우리의 결말은,
+                                <어쩌면 해피엔딩> 배우 신주협, 강혜인
+                            </h2>
+                            <p>이유채, 오계옥</p>
+                        </div><!-- title -->
+                        <div class="cover_image">
+                            <img src="img/cover1-2.jpg" alt="어쩌면해피엔딩 메인이미지">
+                            <a href="#">
+                                클릭하여 원문 보기<img src="img/icon_right_000.png" alt="원문보기">
+                            </a>
+                        </div><!-- cover_image -->
+                    </div><!-- left -->
+
+                    <div class="right">
+                        <div class="content01">
+                            <img src="img/cover1-3.jpg" alt="이미지1" class="img01">
+                            <strong>MOVIE</strong>
+                        </div><!-- content01 -->
+                        <div class="content02">
+                            <img src="img/cover1-1.jpg" alt="이미지2">
+                        </div><!-- content2 -->
+                        <div class="content03">
+                            <p>2028년 한국, 제주 이주 정책이 시작돼 한적한 서울에서 아침을 맞이하는 남자는 사람이 아니다. 그의 정체는 ‘헬퍼 봇-5’ 올리버(신주협). 사람을 돕기
+                                위해 제작됐지만 주인 제임스(유준상)가 떠나 홀로 살고 있다. 외롭기보단 평화로운 올리버의 생활은 이웃 로봇 ‘헬퍼 봇-6’ 클레어(강혜인)가 충전기를 빌리러
+                                오면서 소란하고 예측 불가능해진다. </p>
+                        </div><!-- content3 -->
+                    </div><!-- right -->
+                </div><!-- inner -->
+            </div><!-- #slide2 -->
 
         </div><!-- #section1 -->
 
         <div class="section" id="section2">
-            <div class="intro">
-                <h1>Section 3</h1>
-            </div>
+
+            <div class="slide" id="slide1">
+                <div class="inner">
+                    <img src="img/LindaLindaLinda1.jpg" alt="린다린다린다">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>[리뷰] 재개봉 영화 <린다 린다 린다>
+                            </h2>
+                            <p>
+                                <린다 린다 린다>는 청춘의 무상한 시간이 품고 있는 깊은 아름다움을 탐구한다. 고등학교 문화제 공연을 3일 앞두고 부상과 보컬 탈퇴로 위기에 처한 여학생
+                                    밴드가 한국인 유학생 송(배두나)을 새 보컬로 영입해 블루하츠의 곡을 연습하려 한다. 급조된 밴드의 고군분투는 덧없는 일에도 전력을 다하는 청춘의
+                                    열기를 실어나른다. ···
+                            </p>
+                            <div class="more_btn">
+                                <span>자세히 보기</span>
+                                <img src="img/icon_right_fff.png" alt="자세히 보기">
+                            </div><!-- more_btn -->
+                        </div><!-- text -->
+                    </div><!-- overlay -->
+                </div><!-- inner -->
+            </div><!-- slide1 -->
+
+            <div class="slide" id="slide2">
+                <div class="inner">
+                    <img src="img/movie_review3.jpg" alt="썸머 블루 아워">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>[리뷰] 그림자 지는 오후, 교실 풍경은 그리운 여름 소다맛, <썸머 블루 아워>
+                            </h2>
+                            <p>이제 막 사진전을 연 쑤밍이(정여희)는 필름 카메라 셔터와 함께 2013년 여름으로 돌아간다. 등굣길 아침마다 동선이 겹치는 옌리야오(시백우)를 오랫동안
+                                짝사랑해온 쑤밍이는 멀찍이 그의 사진을 찍으며 마음을 키워온다. 다소 왈가닥 구석이 있는 그는 교복 치마 아래 체육복 바지를 입는 것을 즐긴다. 하지만
+                                보수적인 학교는 그를 두고 복장불량이라 지적하고, 이를 지켜본 옌리야오만이 그에 대항하는 시위를 연다. 빠르게 가까워진 둘. 옌리야오는 제안 섞인 고백을
+                                한다. “이유는 묻지 말고 졸업 때까지 사귀자”고. ···</p>
+                            <div class="more_btn">
+                                <span>자세히 보기</span>
+                                <img src="img/icon_right_fff.png" alt="자세히 보기">
+                            </div><!-- more_btn -->
+                        </div><!-- text -->
+                    </div><!-- overlay -->
+                </div><!-- inner -->
+            </div><!-- slide2 -->
+
+            <div class="slide" id="slide3">
+                <div class="inner">
+                    <img src="img/movie_review1.jpg" alt="8번 출구">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>[coming soon] <8번 출구>
+                            </h2>
+                            <p>지하도는 통과하기 위해 존재한다. 그러나 여기 한 남자(니노미야 가즈나리)는 끝없이 이어지는 지하도에 갇혀버린다. 탈출 방법이 없는 건 아니다. 이상 현상을
+                                발견하면 곧장 되돌아가고 아니면 앞으로 나아갈 것. 그리고 반드시 8번 출구를 통해서 밖으로 나갈 것. 이 규칙들을 따르면 빛을 볼 수 있다···</p>
+                            <div class="more_btn">
+                                <span>자세히 보기</span>
+                                <img src="img/icon_right_fff.png" alt="자세히 보기">
+                            </div><!-- more_btn -->
+                        </div><!-- text -->
+                    </div><!-- overlay -->
+                </div><!-- inner -->
+            </div><!-- slide3 -->
+
         </div><!-- #section2 -->
+
+        <div class="section" id="section3">
+            <div class="inner">
+                <div class="title">
+                    <h3>BOX OFFICE</h3>
+                    <img src="img/icon_right_fff.png" alt="자세히 보기">
+                </div><!-- title -->
+                 
+                <!-- Swiper -->
+                <div class="swiper boxoffice_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="poster">
+                                <img src="img/poster_NoOtherChoice.jpg" alt="어쩔수가 없다">
+                                <strong>1</strong>
+
+                                <div class="overlay">
+                                    <h4>씨네21 전문가 별점 (6)</h4>
+                                    <ul>
+                                        <li><span>정재현 8</span>눈이 시리게 웃기고 서글픈 신자유주의의 푸른 멍</li>
+                                        <li><span>남선우 6</span>가장(假裝)하는 가장(家長)을 기리는 연민과 조소의 폭탄주</li>
+                                        <li><span>김소미 9</span>고전적 인간의 전락을 자조하는 독창적 이미지의 비상</li>
+                                        <li><span>박평식 6</span>울창하지만 가지치기가 필요해</li>
+                                    </ul>
+                                    <a href="#">전체보기 ></a>
+                                </div><!-- overlay -->
+                            </div><!-- poster -->
+
+                            <div class="content">
+                                <h4>어쩔수가없다</h4>
+                                <div class="rank">
+                                    <div class="star">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_half.png" alt="별점">
+                                        <img src="img/icon_star_empty.png" alt="별점">
+                                    </div><!-- star -->
+                                    <p>7.17</p>
+                                </div><!-- rank -->
+                                <div class="info">
+                                    <p>누적: 844,750명</p>
+                                    <p>개봉일: 2025-09-24</p>
+                                    <p>장르: 코미디, 스릴러</p>
+                                </div><!-- info -->
+                            </div><!-- content -->
+                            
+                        </div><!-- swiper-slide -->
+                    </div><!-- swiper-wrapper -->
+                </div><!-- boxoffice_slide -->
+
+            </div><!-- inner -->
+        </div><!-- #section3 -->
+
     </div><!-- fullpage -->
 </body>
 
