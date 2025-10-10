@@ -153,17 +153,24 @@ h2 {
     min-width: 130px;
     padding: 20px 10px;
     background-color: rgba(0, 0, 0, 0.7);
-    display: none;
+    border-top: 3px solid #fff;
+    display: flex;
     flex-direction: column;
     gap: 12px;
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-10px);
+    /* Y 부드럽게 나오는 효과 */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
 
 .header .inner .nav>li:hover .depth-02 {
-    display: flex;
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .header .inner .nav li .depth-02 li a {
@@ -202,12 +209,25 @@ h2 {
 
 .header .inner .util .search_box {
     width: 320px;
-    padding: 6px;
+    padding: 3px;
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 100%;
     right: 0;
-    display: none;
+    margin-top: 10px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    transform: translateY(-10px);
+    /* Y 부드럽게 내려오기 */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.header .inner .util .search_box.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .header .inner .util .search_box input {
@@ -343,7 +363,7 @@ h2 {
 }
 
 #section0 .inner .content .content_btn .btn02:hover {
-    background-color: #96a7b6;
+    background-color: #dadada;
 }
 
 #section0 .inner .cover_img {
@@ -402,7 +422,7 @@ h2 {
 }
 
 #section0 #slide3 .inner .content .content_btn .btn01:hover {
-    background-color: #b35b2d;
+    background-color: #d36124;
 }
 
 #section0 #slide3 .inner .content .content_btn .btn02:hover {
@@ -624,7 +644,8 @@ h2 {
 
 #section2 .inner .overlay .text .more_btn span {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
+    color: #a1a1a1;
 }
 
 #section2 .inner .overlay .text .more_btn img {
@@ -643,24 +664,31 @@ h2 {
 #section3 .inner {
     margin: 100px 0 0 200px;
 }
+
 #section3 .inner .title {
     display: flex;
     gap: 15px;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    padding-left: 20px;
 }
+
 #section3 .inner .title h3 {
     font-family: "Anton", sans-serif;
     font-size: 80px;
     color: #ffffff;
     line-height: 1;
 }
+
 #section3 .inner .title img {
     width: 50px;
     height: 62px;
 }
 
-#section3 .inner .boxoffice_slide {}
+#section3 .inner .boxoffice_slide {
+    padding: 20px;
+}
+
 #section3 .inner .swiper-slide {
     color: #ffffff;
 }
@@ -670,12 +698,14 @@ h2 {
     height: 457px;
     position: relative;
 }
+
 #section3 .inner .swiper-slide .poster img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
+
 #section3 .inner .swiper-slide .poster strong {
     font-family: "Allerta Stencil", sans-serif;
     font-size: 65px;
@@ -696,11 +726,15 @@ h2 {
     background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
     visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
 }
+
 #section3 .inner .swiper-slide .poster:hover .overlay {
     opacity: 1;
     visibility: visible;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: translateY(0);
 }
 
 #section3 .inner .swiper-slide .poster .overlay h4 {
@@ -709,13 +743,16 @@ h2 {
     padding: 15px 0;
     border-bottom: 1px solid #ffffff;
 }
+
 #section3 .inner .swiper-slide .poster .overlay ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px 0;
 }
+
 #section3 .inner .swiper-slide .poster .overlay ul li {}
+
 #section3 .inner .swiper-slide .poster .overlay ul li span {
     font-size: 15px;
     font-weight: 600;
@@ -723,6 +760,7 @@ h2 {
     display: block;
     margin-bottom: 5px;
 }
+
 #section3 .inner .swiper-slide .poster .overlay a {
     font-size: 14px;
     font-weight: 500;
@@ -739,6 +777,7 @@ h2 {
     flex-direction: column;
     gap: 8px;
 }
+
 #section3 .inner .swiper-slide .content h4 {
     font-size: 20px;
     font-weight: 700;
@@ -750,14 +789,17 @@ h2 {
     align-items: center;
     justify-content: center;
 }
+
 #section3 .inner .swiper-slide .content .rank .star {
     display: flex;
     gap: -5px;
 }
+
 #section3 .inner .swiper-slide .content .rank .star img {
     width: 22px;
     margin-right: -5px;
 }
+
 #section3 .inner .swiper-slide .content .rank p {
     color: #FEE379;
 }
@@ -767,3 +809,7 @@ h2 {
     flex-direction: column;
     gap: 3px;
 }
+
+/* ---- section4 ----- */
+/* slide1 */
+#section4 {}

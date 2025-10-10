@@ -36,11 +36,7 @@
             let searchBox = document.querySelector('.search_box');
 
             searchBtn.addEventListener('click', () => {
-                if (searchBox.style.display === '' || searchBox.style.display === 'none') {
-                    searchBox.style.display = 'block';
-                } else if (searchBox.style.display === 'block') {
-                    searchBox.style.display = 'none';
-                }
+                searchBox.classList.toggle('active')
             });
 
             /* 박스오피스 슬라이드 */
@@ -304,7 +300,7 @@
                             </p>
                             <div class="more_btn">
                                 <span>자세히 보기</span>
-                                <img src="img/icon_right_fff.png" alt="자세히 보기">
+                                <img src="img/icon_right_a1.png" alt="자세히 보기">
                             </div><!-- more_btn -->
                         </div><!-- text -->
                     </div><!-- overlay -->
@@ -323,7 +319,7 @@
                                 한다. “이유는 묻지 말고 졸업 때까지 사귀자”고. ···</p>
                             <div class="more_btn">
                                 <span>자세히 보기</span>
-                                <img src="img/icon_right_fff.png" alt="자세히 보기">
+                                <img src="img/icon_right_a1.png" alt="자세히 보기">
                             </div><!-- more_btn -->
                         </div><!-- text -->
                     </div><!-- overlay -->
@@ -340,7 +336,7 @@
                                 발견하면 곧장 되돌아가고 아니면 앞으로 나아갈 것. 그리고 반드시 8번 출구를 통해서 밖으로 나갈 것. 이 규칙들을 따르면 빛을 볼 수 있다···</p>
                             <div class="more_btn">
                                 <span>자세히 보기</span>
-                                <img src="img/icon_right_fff.png" alt="자세히 보기">
+                                <img src="img/icon_right_a1.png" alt="자세히 보기">
                             </div><!-- more_btn -->
                         </div><!-- text -->
                     </div><!-- overlay -->
@@ -362,7 +358,6 @@
                             <div class="poster">
                                 <img src="img/poster_NoOtherChoice.jpg" alt="어쩔수가 없다">
                                 <strong>1</strong>
-
                                 <div class="overlay">
                                     <h4>씨네21 전문가 별점 (6)</h4>
                                     <ul>
@@ -374,7 +369,6 @@
                                     <a href="#">전체보기 ></a>
                                 </div><!-- overlay -->
                             </div><!-- poster -->
-
                             <div class="content">
                                 <h4>어쩔수가없다</h4>
                                 <div class="rank">
@@ -393,13 +387,345 @@
                                     <p>장르: 코미디, 스릴러</p>
                                 </div><!-- info -->
                             </div><!-- content -->
+                        </div><!-- swiper-slide -->
 
+                        <div class="swiper-slide">
+                            <div class="poster">
+                                <img src="img/poster_ChainsawMan.png" alt="체인소 맨">
+                                <strong>2</strong>
+                                <div class="overlay">
+                                    <h4>씨네21 전문가 별점 (1)</h4>
+                                    <ul>
+                                        <li><span>이우빈 7</span>물의 고요에서 불의 열망으로, 톱질도 순애다</li>
+                                    </ul>
+                                    <a href="#">전체보기 ></a>
+                                </div><!-- overlay -->
+                            </div><!-- poster -->
+                            <div class="content">
+                                <h4>극장판 체인소 맨: 레제편</h4>
+                                <div class="rank">
+                                    <div class="star">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_half.png" alt="별점">
+                                        <img src="img/icon_star_empty.png" alt="별점">
+                                    </div><!-- star -->
+                                    <p>7.00</p>
+                                </div><!-- rank -->
+                                <div class="info">
+                                    <p>누적: 642,488명</p>
+                                    <p>개봉일: 2025-09-24</p>
+                                    <p>장르: 애니메이션</p>
+                                </div><!-- info -->
+                            </div><!-- content -->
+                        </div><!-- swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="poster">
+                                <img src="img/poster_DemonSlayer.jpg" alt="귀멸의 칼날">
+                                <strong>3</strong>
+                                <div class="overlay">
+                                    <h4>씨네21 전문가 별점 (2)</h4>
+                                    <ul>
+                                        <li><span>이우빈 7</span>소년 만화의 고전성을 현대 애니메이션의 호흡으로</li>
+                                        <li><span>이용철 7</span>기대한 것과 몰랐던 걸 섞는 특유의 방식대로</li>
+                                    </ul>
+                                    <a href="#">전체보기 ></a>
+                                </div><!-- overlay -->
+                            </div><!-- poster -->
+                            <div class="content">
+                                <h4>극장판 귀멸의 칼날: 무한성편</h4>
+                                <div class="rank">
+                                    <div class="star">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_half.png" alt="별점">
+                                        <img src="img/icon_star_empty.png" alt="별점">
+                                    </div><!-- star -->
+                                    <p>7.00</p>
+                                </div><!-- rank -->
+                                <div class="info">
+                                    <p>누적: 5,041,543명</p>
+                                    <p>개봉일: 2025-08-22</p>
+                                    <p>장르: 애니메이션</p>
+                                </div><!-- info -->
+                            </div><!-- content -->
+                        </div><!-- swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="poster">
+                                <img src="img/poster_TheUgly.jpg" alt="얼굴">
+                                <strong>4</strong>
+                                <div class="overlay">
+                                    <h4>씨네21 전문가 별점 (6)</h4>
+                                    <ul>
+                                        <li><span>정재현 6</span>미상의 혐오를 몽타주하다</li>
+                                        <li><span>박평식 6</span>허세 벗고 시장통에 누운 감독</li>
+                                        <li><span>최선 7</span>새 궤도에 진입한 연니버스</li>
+                                        <li><span>오진우 6</span>시작부터 숨김없이 드러낸 진실의 민낯</li>
+                                    </ul>
+                                    <a href="#">전체보기 ></a>
+                                </div><!-- overlay -->
+                            </div><!-- poster -->
+                            <div class="content">
+                                <h4>얼굴</h4>
+                                <div class="rank">
+                                    <div class="star">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_empty.png" alt="별점">
+                                        <img src="img/icon_star_empty.png" alt="별점">
+                                    </div><!-- star -->
+                                    <p>6.33</p>
+                                </div><!-- rank -->
+                                <div class="info">
+                                    <p>누적: 943,072명</p>
+                                    <p>개봉일: 2025-09-11</p>
+                                    <p>장르: 미스터리</p>
+                                </div><!-- info -->
+                            </div><!-- content -->
+                        </div><!-- swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="poster">
+                                <img src="img/poster_bread.jpg" alt="브레드이발소">
+                                <strong>5</strong>
+                                <div class="overlay">
+                                    <h4>씨네21 전문가 별점 (1)</h4>
+                                    <ul>
+                                        <li><span>이자연 6</span>브레드 아저씨 그만 웃겨요, 유아동을 뛰어넘는 코미디</li>
+                                    </ul>
+                                    <a href="#">전체보기 ></a>
+                                </div><!-- overlay -->
+                            </div><!-- poster -->
+                            <div class="content">
+                                <h4>브레드이발소: 베이커리타운의 악당들</h4>
+                                <div class="rank">
+                                    <div class="star">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_empty.png" alt="별점">
+                                        <img src="img/icon_star_empty.png" alt="별점">
+                                    </div><!-- star -->
+                                    <p>6.00</p>
+                                </div><!-- rank -->
+                                <div class="info">
+                                    <p>누적: 64,149명</p>
+                                    <p>개봉일: 2025-09-27</p>
+                                    <p>장르: 애니메이션</p>
+                                </div><!-- info -->
+                            </div><!-- content -->
+                        </div><!-- swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="poster">
+                                <img src="img/poster_MononokeHime.jpg" alt="모노노케 히메">
+                                <strong>6</strong>
+                                <div class="overlay">
+                                    <h4>씨네21 전문가 별점 (2)</h4>
+                                    <ul>
+                                        <li><span>박평식 7</span>예언자에게 은퇴는 있을 수 없지</li>
+                                        <li><span>김봉석 8</span>여전히 의미있는, 세기말에 던지는 하야오의 충고</li>
+                                    </ul>
+                                    <a href="#">전체보기 ></a>
+                                </div><!-- overlay -->
+                            </div><!-- poster -->
+                            <div class="content">
+                                <h4>모노노케 히메</h4>
+                                <div class="rank">
+                                    <div class="star">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_empty.png" alt="별점">
+                                    </div><!-- star -->
+                                    <p>7.50</p>
+                                </div><!-- rank -->
+                                <div class="info">
+                                    <p>누적: 24,576명</p>
+                                    <p>개봉일: 2025-09-17</p>
+                                    <p>장르: 애니메이션</p>
+                                </div><!-- info -->
+                            </div><!-- content -->
+                        </div><!-- swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="poster">
+                                <img src="img/poster_F1.jpg" alt="F1 더 무비">
+                                <strong>7</strong>
+                                <div class="overlay">
+                                    <h4>씨네21 전문가 별점 (5)</h4>
+                                    <ul>
+                                        <li><span>김소미 7</span>할리우드의 향수와 하이테크팀의 쾌적한 드라이브. 결승선까지 거뜬하다</li>
+                                        <li><span>박평식 6</span>흥분과 환호 사이 두통도</li>
+                                        <li><span>이용철 7</span>아이맥스로 보잖아, 이건 정말 OTT에선 꿈도 못 꿀 일!</li>
+                                        <li><span>유선아 8</span>서킷을 압도하는 영화의 묵직한 다운포스</li>
+                                    </ul>
+                                    <a href="#">전체보기 ></a>
+                                </div><!-- overlay -->
+                            </div><!-- poster -->
+                            <div class="content">
+                                <h4>F1 더 무비</h4>
+                                <div class="rank">
+                                    <div class="star">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_half.png" alt="별점">
+                                        <img src="img/icon_star_empty.png" alt="별점">
+                                    </div><!-- star -->
+                                    <p>7.00</p>
+                                </div><!-- rank -->
+                                <div class="info">
+                                    <p>누적: 5,127,231명</p>
+                                    <p>개봉일: 2025-06-25</p>
+                                    <p>장르: 액션, 드라마</p>
+                                </div><!-- info -->
+                            </div><!-- content -->
+                        </div><!-- swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="poster">
+                                <img src="img/poster_onebattle.jpg" alt="원 배틀 애프터 어나더">
+                                <strong>8</strong>
+                                <div class="overlay">
+                                    <h4>씨네21 전문가 별점 (6)</h4>
+                                    <ul>
+                                        <li><span>정재현 8</span>‘위대한 미국’이 연쇄 추돌하는, PTA의 레볼루셔너리 로드</li>
+                                        <li><span>박평식 8</span>황홀한 폭주, 분노하고 사랑하라</li>
+                                        <li><span>홍수정 10</span>자기 세계를 거꾸로 뒤집은 PTA의 위대한 영화</li>
+                                        <li><span>이용철 10</span>Welcome Back where you belong, PTA</li>
+                                    </ul>
+                                    <a href="#">전체보기 ></a>
+                                </div><!-- overlay -->
+                            </div><!-- poster -->
+                            <div class="content">
+                                <h4>원 배틀 애프터 어나더</h4>
+                                <div class="rank">
+                                    <div class="star">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_half.png" alt="별점">
+                                    </div><!-- star -->
+                                    <p>8.83</p>
+                                </div><!-- rank -->
+                                <div class="info">
+                                    <p>누적: 22,857명</p>
+                                    <p>개봉일: 2025-10-01</p>
+                                    <p>장르: 액션, 범죄</p>
+                                </div><!-- info -->
+                            </div><!-- content -->
+                        </div><!-- swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="poster">
+                                <img src="img/poster_YourLetter.jpg" alt="연의 편지">
+                                <strong>9</strong>
+                                <div class="overlay">
+                                    <h4>씨네21 전문가 별점 (2)</h4>
+                                    <ul>
+                                        <li><span>이자연 7</span>요즘 힘들다는 당신에게, 초록빛 무성한 편지를 보냅니다</li>
+                                        <li><span>이용철 7</span>참 아름다운 편지 이야기</li>
+                                    </ul>
+                                    <a href="#">전체보기 ></a>
+                                </div><!-- overlay -->
+                            </div><!-- poster -->
+                            <div class="content">
+                                <h4>연의 편지</h4>
+                                <div class="rank">
+                                    <div class="star">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_half.png" alt="별점">
+                                        <img src="img/icon_star_empty.png" alt="별점">
+                                    </div><!-- star -->
+                                    <p>7.00</p>
+                                </div><!-- rank -->
+                                <div class="info">
+                                    <p>누적: 19,988명</p>
+                                    <p>개봉일: 2025-10-01</p>
+                                    <p>장르: 애니메이션</p>
+                                </div><!-- info -->
+                            </div><!-- content -->
+                        </div><!-- swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="poster">
+                                <img src="img/poster_JustAccident.jpg" alt="그저 사고였을 뿐">
+                                <strong>10</strong>
+                                <div class="overlay">
+                                    <h4>씨네21 전문가 별점 (4)</h4>
+                                    <ul>
+                                        <li><span>조현나 7</span>가장 큰 복수는 가해자와 똑같은 인간이 되지 않는 것이다</li>
+                                        <li><span>정재현 7</span>환청적 엔딩. 청각을 입은 폭력이 극장 밖까지 관객을 끌고 나간다</li>
+                                        <li><span>박평식 7</span>부역자들, 그 내면의 사막과 궤변</li>
+                                        <li><span>이용철 8</span>그게 있다면, 어느 게 신의 뜻인가</li>
+                                    </ul>
+                                    <a href="#">전체보기 ></a>
+                                </div><!-- overlay -->
+                            </div><!-- poster -->
+                            <div class="content">
+                                <h4>그저 사고였을 뿐</h4>
+                                <div class="rank">
+                                    <div class="star">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_fill.png" alt="별점">
+                                        <img src="img/icon_star_half.png" alt="별점">
+                                        <img src="img/icon_star_empty.png" alt="별점">
+                                    </div><!-- star -->
+                                    <p>7.25</p>
+                                </div><!-- rank -->
+                                <div class="info">
+                                    <p>누적: 18,191명</p>
+                                    <p>개봉일: 2025-10-01</p>
+                                    <p>장르: 액션, 범죄, 드라마</p>
+                                </div><!-- info -->
+                            </div><!-- content -->
                         </div><!-- swiper-slide -->
                     </div><!-- swiper-wrapper -->
                 </div><!-- boxoffice_slide -->
-
             </div><!-- inner -->
         </div><!-- #section3 -->
+
+        <div class="section" id="section4">
+            <div class="slide active" id="slide1">
+                <img src="img/photo_Yadang.jpg" alt="야당 메인이미지">
+                <div class="overlay">
+                </div><!-- overlay -->
+                <div class="text_wrap">
+                    <div class="category">
+                        <img src="img/icon_Netflix.png" alt="넷플릭스">
+                        <strong>Netflix Top5</strong>
+                    </div><!-- category -->
+                    <div class="1st">
+                        <div class="name">
+                            <strong>1.</strong>
+                            <h5>야당</h5>
+                        </div><!-- name -->
+                        <div class="info">
+                            <p>대한민국 마약 수사의 뒷거래 모든 것은 야당으로부터 시작된다!</p>
+                            <span>강하늘, 유해진, 박해준</span>
+                        </div><!-- info -->
+                    </div><!-- 1st -->
+                </div><!-- text_wrap -->
+                <!-- 2~4위 -->
+                <div class="list">
+                
+                </div><!-- list -->
+            </div><!-- slide1 -->
+        </div><!-- #section4 -->
+
+    </div><!-- inner -->
+    </div><!-- #section3 -->
 
     </div><!-- fullpage -->
 </body>
