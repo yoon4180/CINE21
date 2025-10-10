@@ -17,11 +17,18 @@
         window.onload = () => {
             /* 풀페이지 */
             var myFullpage = new fullpage('#fullpage', {
-                anchors: ['1', '2', '3', '4', '5'],
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
                 menu: '#menu',
                 slidesNavigation: true,
                 lazyLoad: true,
-                credits: { enabled: false }
+                credits: { enabled: false },
+                afterRender: function () {
+                    // ✅ 첫 페이지(섹션0, 슬라이드1)로 강제 이동
+                    fullpage_api.moveTo('section0', 0);
+
+                    // ✅ URL 해시 제거 (혹시 남아있으면)
+                    history.replaceState(null, null, ' ');
+                },
             });
 
             /* 헤더 */
@@ -123,15 +130,13 @@
 
     <div id="fullpage">
         <div class="section active" id="section0">
-
-            <div class="slide" id="slide1">
+            <div class="slide active" id="slide1">
                 <div class="intro">
                     <img src="img/MFLS_photo1.png" alt="메인비주얼 배경">
                     <video src="img/1525MFLS.mp4" autoplay muted loop></video>
                 </div><!-- intro -->
             </div><!-- slide1 -->
-
-            <div class="slide active" id="slide2">
+            <div class="slide" id="slide2">
                 <div class="background">
                     <img src="img/bg1.jpg" alt="배경">
                 </div><!-- background -->
@@ -174,8 +179,7 @@
                     </div><!-- cover_img -->
                 </div><!-- inner -->
             </div><!-- slide2 -->
-
-            <div class="slide active" id="slide3">
+            <div class="slide" id="slide3">
                 <div class="background">
                     <img src="img/bg1.jpg" alt="배경">
                 </div><!-- background -->
@@ -214,12 +218,10 @@
                     </div><!-- cover_img -->
                 </div><!-- inner -->
             </div><!-- slide3 -->
-
         </div><!-- #section0 -->
 
         <div class="section" id="section1">
-
-            <div class="slide" id="slide1">
+            <div class="slide active" id="slide1">
                 <img src="img/book_shadow.png" alt="책그림자" class="bg">
                 <div class="inner">
                     <div class="left">
@@ -251,7 +253,6 @@
                     </div><!-- right -->
                 </div><!-- inner -->
             </div><!-- #slide1 -->
-
             <div class="slide" id="slide2">
                 <img src="img/book_shadow.png" alt="책그림자" class="bg">
                 <div class="inner">
@@ -286,12 +287,10 @@
                     </div><!-- right -->
                 </div><!-- inner -->
             </div><!-- #slide2 -->
-
         </div><!-- #section1 -->
 
         <div class="section" id="section2">
-
-            <div class="slide" id="slide1">
+            <div class="slide active" id="slide1">
                 <div class="inner">
                     <img src="img/LindaLindaLinda1.jpg" alt="린다린다린다">
                     <div class="overlay">
@@ -311,7 +310,6 @@
                     </div><!-- overlay -->
                 </div><!-- inner -->
             </div><!-- slide1 -->
-
             <div class="slide" id="slide2">
                 <div class="inner">
                     <img src="img/movie_review3.jpg" alt="썸머 블루 아워">
@@ -331,7 +329,6 @@
                     </div><!-- overlay -->
                 </div><!-- inner -->
             </div><!-- slide2 -->
-
             <div class="slide" id="slide3">
                 <div class="inner">
                     <img src="img/movie_review1.jpg" alt="8번 출구">
@@ -349,7 +346,6 @@
                     </div><!-- overlay -->
                 </div><!-- inner -->
             </div><!-- slide3 -->
-
         </div><!-- #section2 -->
 
         <div class="section" id="section3">
@@ -358,7 +354,7 @@
                     <h3>BOX OFFICE</h3>
                     <img src="img/icon_right_fff.png" alt="자세히 보기">
                 </div><!-- title -->
-                 
+
                 <!-- Swiper -->
                 <div class="swiper boxoffice_slide">
                     <div class="swiper-wrapper">
@@ -397,7 +393,7 @@
                                     <p>장르: 코미디, 스릴러</p>
                                 </div><!-- info -->
                             </div><!-- content -->
-                            
+
                         </div><!-- swiper-slide -->
                     </div><!-- swiper-wrapper -->
                 </div><!-- boxoffice_slide -->

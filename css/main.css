@@ -700,7 +700,9 @@ h2 {
 #section3 .inner .swiper-slide .poster:hover .overlay {
     opacity: 1;
     visibility: visible;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
+
 #section3 .inner .swiper-slide .poster .overlay h4 {
     font-size: 18px;
     font-weight: 600;
