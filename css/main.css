@@ -82,6 +82,54 @@ h2 {
     font-weight: 700;
 }
 
+h3 {
+    font-family: "Anton", sans-serif;
+    font-size: 150px;
+    color: #333333;
+    line-height: 1;
+}
+
+h4 {
+    font-family: "Anton", sans-serif;
+    font-size: 80px;
+    color: #ffffff;
+    line-height: 1;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h6 {
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+/* 왼쪽 화살표 */
+.fp-controlArrow.fp-prev {
+    border: none !important;
+    /* 기존 삼각형 제거 */
+    width: 40px;
+    /* 이미지 크기 조정 */
+    height: 40px;
+    background: url('../img/icon_slide_left.png') no-repeat center center;
+    background-size: contain;
+    left: 30px;
+    /* 위치 조정 */
+}
+
+/* 오른쪽 화살표 */
+.fp-controlArrow.fp-next {
+    border: none !important;
+    width: 40px;
+    height: 40px;
+    background: url('../img/icon_slide_right.png') no-repeat center center;
+    background-size: contain;
+    right: 30px;
+}
+
 /* ----- 헤더 ----- */
 .header {
     width: 100%;
@@ -530,13 +578,6 @@ h2 {
     object-position: 50% 20%;
 }
 
-#section1 .inner .right .content01 strong {
-    font-family: "Anton", sans-serif;
-    font-size: 150px;
-    color: #333333;
-    line-height: 1;
-}
-
 #section1 .inner .right .content02 {
     height: 274px;
 }
@@ -662,7 +703,7 @@ h2 {
 }
 
 #section3 .inner {
-    margin: 100px 0 0 200px;
+    margin: 80px 0 0 200px;
 }
 
 #section3 .inner .title {
@@ -671,13 +712,6 @@ h2 {
     align-items: center;
     margin-bottom: 10px;
     padding-left: 20px;
-}
-
-#section3 .inner .title h3 {
-    font-family: "Anton", sans-serif;
-    font-size: 80px;
-    color: #ffffff;
-    line-height: 1;
 }
 
 #section3 .inner .title img {
@@ -709,6 +743,7 @@ h2 {
 #section3 .inner .swiper-slide .poster strong {
     font-family: "Allerta Stencil", sans-serif;
     font-size: 65px;
+    font-weight: 400;
     line-height: 1;
     position: absolute;
     bottom: -5px;
@@ -737,9 +772,7 @@ h2 {
     transform: translateY(0);
 }
 
-#section3 .inner .swiper-slide .poster .overlay h4 {
-    font-size: 18px;
-    font-weight: 600;
+#section3 .inner .swiper-slide .poster .overlay h5 {
     padding: 15px 0;
     border-bottom: 1px solid #ffffff;
 }
@@ -778,11 +811,6 @@ h2 {
     gap: 8px;
 }
 
-#section3 .inner .swiper-slide .content h4 {
-    font-size: 20px;
-    font-weight: 700;
-}
-
 #section3 .inner .swiper-slide .content .rank {
     display: flex;
     gap: 9px;
@@ -812,4 +840,141 @@ h2 {
 
 /* ---- section4 ----- */
 /* slide1 */
-#section4 {}
+#section4 .inner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#section4 .inner>img {
+    width: 62.65%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#section4 .inner .overlay {
+    width: 57.70%;
+    height: 100%;
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 36%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#section4 .inner .overlay_btm {
+    width: 100%;
+    height: 33%;
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 85%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#section4 .slide .text_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: absolute;
+    bottom: 90px;
+    left: 198px;
+    color: #ffffff;
+}
+
+#section4 .slide .text_wrap .category {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#section4 .slide .text_wrap .category img {
+    width: 40px;
+    height: 40px;
+}
+
+#section4 .slide .text_wrap .first {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+#section4 .slide .text_wrap .first .name {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+#section4 .slide .text_wrap .first .name strong {
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#section4 .slide .text_wrap .first .name p {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#section4 .slide .text_wrap .first .info_wrap {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+#section4 .slide .text_wrap .first .info_wrap img {
+    width: 30px;
+    height: 30px;
+}
+
+#section4 .slide .text_wrap .first .info p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+#section4 .slide .text_wrap .first .info span {
+    color: #a1a1a1;
+}
+
+#section4 .list {
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 36px;
+    position: absolute;
+    bottom: 90px;
+    right: 143px;
+}
+
+#section4 .list .item {
+    width: 210px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+#section4 .list .item .poster_image {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 13px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+#section4 .list .item .poster_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#section4 .list .item strong {
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 1;
+    position: absolute;
+    left: -25px;
+    bottom: 15px;
+}
