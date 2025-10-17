@@ -475,6 +475,10 @@
 
 
 /* ---- section3 ----- */
+#section3 .content button {
+    display: none;
+}
+
 #section3 {
     width: 100%;
     height: 100vh;
@@ -493,6 +497,8 @@
     margin-bottom: 10px;
     padding-left: 20px;
 }
+
+
 
 #section3 .inner .title img {
     width: 50px;
@@ -907,7 +913,42 @@
     }
 
     /* ---- 태블릿 section3 ----- */
-    
+    #section3 .inner .swiper-slide .poster .overlay {
+        display: none;
+    }
+
+    #section3 .inner {
+        margin: 0 0 0 6.5%;
+    }
+
+    #section3 .inner .title {
+        margin-bottom: 40px;
+    }
+
+    #section3 .inner .swiper-slide .poster {
+        width: 100%;
+        position: relative;
+    }
+
+    #section3 .inner .swiper-slide .poster img {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    #section3 .content {
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    #section3 .content button {
+        display: block;
+        width: 144px;
+        height: 36px;
+        border-radius: 8px;
+        border: 1px solid #B1060F;
+        background-color: #ffffff;
+        color: #B1060F;
+        margin-top: 7px;
+    }
 }
 
 
@@ -1095,4 +1136,60 @@
     }
 
     /* ---- 모바일 section3 ----- */
+    #section3 .inner {
+        margin: 0 0 0 5.6%;
+    }
+
+    #section3 .inner .title {
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    #section3 .inner .title img {
+        width: 32px;
+        height: 40px;
+    } 
+
+    #section3 .inner .boxoffice_slide {
+        padding: 10px;
+    }
+
+    #section3 .inner .swiper-slide .poster {
+        width: 100%;
+        height: 230px;
+    }
+
+    #section3 .inner .swiper-slide .poster strong {
+        font-size: 35px;
+        left: 2px;
+    }
+
+    #section3 .inner .swiper-slide .poster .overlay h5 {
+        padding: 15px 0;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    #section3 .inner .swiper-slide .poster img {
+        box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+    }
+
+    #section3 .content {
+        align-items: center;
+        margin-right: 20px;
+        gap: 5px;
+    }
+
+    #section3 .content button {
+        width: 110px;
+        height: 32px;
+    }
+
+    #section3 .inner .swiper-slide .content .rank {
+        gap: 4px;
+    }
+
+    #section3 .inner .swiper-slide .content .rank .star img {
+        width: 20px;
+        margin-right: -5px;
+    }
 }

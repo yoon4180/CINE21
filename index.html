@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="css/common.css">
 
     <!-- Jquery -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <!-- fullpage -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- fullpage -->
     <script src="lib/fullpage.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -66,7 +68,7 @@
             const menuopen = $('.menu')
             const mobileNav = $('.nav.mobile');
 
-            menuopen.click(function(){
+            menuopen.click(function () {
                 mobileNav.toggleClass('active')
                 menuopen.toggleClass('open')//메뉴 열릴 때 아이콘 변경
             });
@@ -76,7 +78,7 @@
             const depth02Links = $('.nav.mobile .depth-02 li')
 
             //1차 메뉴 클릭 시 2차 메뉴 나타나고 사라짐
-            depth01Links.click(function(){
+            depth01Links.click(function () {
                 depth01Links.removeClass('active');
                 $(this).addClass('active');
 
@@ -86,7 +88,7 @@
             });
 
             //2차 메뉴 클릭 시 3차 메뉴 나타나고 사라짐
-            depth02Links.click(function(){
+            depth02Links.click(function () {
                 $(this).toggleClass('on')
 
                 $(this).find('.depth-03').toggle('active');
@@ -102,6 +104,20 @@
                 pagination: {
                     clickable: true,
                 },
+                breakpoints: {
+                    0: {         // 0px 이상 ~ 499px
+                        slidesPerView: 2.1,
+                        spaceBetween: 13, // 필요하면 간격도 줄일 수 있음
+                    },
+                    500: {       // 500px 이상 ~ 1024px
+                        slidesPerView: 2.5,
+                        spaceBetween: 50,
+                    },
+                    1025: {      // 1025px 이상
+                        slidesPerView: 4.5,
+                        spaceBetween: 75,
+                    }
+                }
             });
         }
     </script>
@@ -627,6 +643,9 @@
                                     <p>개봉일: 2025-09-24</p>
                                     <p>장르: 코미디, 스릴러</p>
                                 </div><!-- info -->
+
+                                <!-- 모바일용 버튼 -->
+                                <button>씨네21 리뷰보기</button>
                             </div><!-- content -->
                         </div><!-- swiper-slide -->
 
@@ -659,6 +678,9 @@
                                     <p>개봉일: 2025-09-24</p>
                                     <p>장르: 애니메이션</p>
                                 </div><!-- info -->
+
+                                <!-- 모바일용 버튼 -->
+                                <button>씨네21 리뷰보기</button>
                             </div><!-- content -->
                         </div><!-- swiper-slide -->
 
@@ -692,6 +714,9 @@
                                     <p>개봉일: 2025-08-22</p>
                                     <p>장르: 애니메이션</p>
                                 </div><!-- info -->
+
+                                <!-- 모바일용 버튼 -->
+                                <button>씨네21 리뷰보기</button>
                             </div><!-- content -->
                         </div><!-- swiper-slide -->
 
@@ -727,6 +752,9 @@
                                     <p>개봉일: 2025-09-11</p>
                                     <p>장르: 미스터리</p>
                                 </div><!-- info -->
+
+                                <!-- 모바일용 버튼 -->
+                                <button>씨네21 리뷰보기</button>
                             </div><!-- content -->
                         </div><!-- swiper-slide -->
 
@@ -759,6 +787,9 @@
                                     <p>개봉일: 2025-09-27</p>
                                     <p>장르: 애니메이션</p>
                                 </div><!-- info -->
+
+                                <!-- 모바일용 버튼 -->
+                                <button>씨네21 리뷰보기</button>
                             </div><!-- content -->
                         </div><!-- swiper-slide -->
 
@@ -792,6 +823,9 @@
                                     <p>개봉일: 2025-09-17</p>
                                     <p>장르: 애니메이션</p>
                                 </div><!-- info -->
+
+                                <!-- 모바일용 버튼 -->
+                                <button>씨네21 리뷰보기</button>
                             </div><!-- content -->
                         </div><!-- swiper-slide -->
 
@@ -827,6 +861,9 @@
                                     <p>개봉일: 2025-06-25</p>
                                     <p>장르: 액션, 드라마</p>
                                 </div><!-- info -->
+
+                                <!-- 모바일용 버튼 -->
+                                <button>씨네21 리뷰보기</button>
                             </div><!-- content -->
                         </div><!-- swiper-slide -->
 
@@ -862,6 +899,9 @@
                                     <p>개봉일: 2025-10-01</p>
                                     <p>장르: 액션, 범죄</p>
                                 </div><!-- info -->
+
+                                <!-- 모바일용 버튼 -->
+                                <button>씨네21 리뷰보기</button>
                             </div><!-- content -->
                         </div><!-- swiper-slide -->
 
@@ -895,6 +935,9 @@
                                     <p>개봉일: 2025-10-01</p>
                                     <p>장르: 애니메이션</p>
                                 </div><!-- info -->
+
+                                <!-- 모바일용 버튼 -->
+                                <button>씨네21 리뷰보기</button>
                             </div><!-- content -->
                         </div><!-- swiper-slide -->
 
@@ -930,6 +973,9 @@
                                     <p>개봉일: 2025-10-01</p>
                                     <p>장르: 액션, 범죄, 드라마</p>
                                 </div><!-- info -->
+
+                                <!-- 모바일용 버튼 -->
+                                <button>씨네21 리뷰보기</button>
                             </div><!-- content -->
                         </div><!-- swiper-slide -->
                     </div><!-- swiper-wrapper -->
