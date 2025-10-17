@@ -122,13 +122,18 @@ h6 {
 }
 
 .header .inner {
-    max-width: 1524px;
-    width: calc(100% - 40px);
+    width: 79.37%;
     height: 80px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 1280px) {
+    .header .inner {
+        width: calc(100% - 70px);
+    }
 }
 
 .header .inner .logo {
@@ -313,7 +318,7 @@ h6 {
 
 /* --- 푸터 --- */
 #footer {
-    background-color: #000000; 
+    background-color: #000000;
 }
 
 #footer .border {
@@ -325,12 +330,17 @@ h6 {
 }
 
 #footer .inner {
-    max-width: 1524px;
-    width: calc(100% - 40px);
+    width: 79.37%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 1280px) {
+    #footer .inner {
+        width: calc(100% - 70px);
+    }
 }
 
 #footer .inner .logo {
@@ -490,7 +500,7 @@ h6 {
         display: none;
     }
 
-    /* 모바일 메뉴탭 */
+    /* 태블릿, 모바일 메뉴탭 */
     .header .inner .nav.mobile {
         width: 73.50%;
         height: 100vh;
@@ -604,6 +614,10 @@ h6 {
     }
 
     /* 태블릿 푸터 */
+    #footer .border {
+        padding: 40px 0 30px;
+    }
+
     #footer .inner {
         width: 86.81%;
         flex-direction: column;
@@ -626,7 +640,9 @@ h6 {
     }
 }
 
-/* --- 500 이하일 때(모바일 ver) --- */
+
+
+/* --- 720 이하일 때(모바일 ver) --- */
 @media screen and (max-width: 720px) {
     h2 {
         font-size: 18px;
@@ -673,6 +689,7 @@ h6 {
         top: 30px;
         left: 160px;
     }
+
     /* 모바일 푸터 */
     #footer .inner {
         width: 88.8%;
