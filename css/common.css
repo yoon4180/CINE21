@@ -107,9 +107,13 @@ h6 {
 }
 
 /* ----- 헤더 ----- */
+.header .inner .nav.mobile {
+    display: none;
+}
+
 .header {
     width: 100%;
-    background-color: rgba(51, 51, 51, 0.7);
+    background-color: rgba(51, 51, 51, 0.9);
     color: #ffffff;
     position: fixed;
     top: 0;
@@ -119,7 +123,7 @@ h6 {
 
 .header .inner {
     max-width: 1524px;
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     height: 80px;
     margin: 0 auto;
     display: flex;
@@ -140,47 +144,64 @@ h6 {
     width: 100%;
 }
 
-.header .inner .nav {
+.header .inner .menu img {
+    display: none;
+}
+
+.header .inner .nav.pc {
     display: flex;
     gap: 10px;
 }
 
-.header .inner .nav>li {
+/* depth-01 */
+.header .inner .nav.pc .depth-01-list {
+    display: flex;
+}
+
+.header .inner .nav.pc .depth-01-list>li {
     position: relative;
     height: 80px;
     display: flex;
     align-items: center;
 }
 
-.header .inner .nav>li .depth-01 {
+.header .inner .nav.pc .depth-01-list>li>.depth-01 {
     width: 100px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
-.header .inner .nav>li .depth-01.sub_btn {
+.header .inner .nav.pc .depth-01-list li:hover .depth-01 {
+    transform: translateY(-4px);
+    font-weight: 700;
+}
+
+.header .inner .nav .depth-01-list li .depth-01.sub_btn {
     background-color: #FEE379;
     color: #333;
     border-radius: 20px;
+    margin-left: 20px;
     transition: all 0.2s;
 }
 
-.header .inner .nav>li:hover .depth-01.sub_btn {
+.header .inner .nav .depth-01-list li:hover .depth-01.sub_btn {
     background-color: #333;
     color: #FEE379;
     border: 1px solid #FEE379;
 }
 
-.header .inner .nav>li .depth-02 {
+/* depth-02 */
+.header .inner .nav.pc .depth-01-list li .depth-02 {
     min-width: 130px;
     padding: 20px 10px;
     background-color: rgba(0, 0, 0, 0.7);
     border-top: 3px solid #fff;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -191,19 +212,45 @@ h6 {
     transition: all 0.3s ease;
 }
 
-.header .inner .nav>li:hover .depth-02 {
+.header .inner .nav.pc .depth-01-list li:hover .depth-02 {
     transform: translateX(-50%) translateY(0);
     opacity: 1;
     pointer-events: auto;
 }
 
-.header .inner .nav li .depth-02 li a {
-    color: #c0c0c0;
+.header .inner .nav.pc .depth-02 li {
+    width: fit-content;
+    /* 글자만큼 */
+    color: #A1A1A1;
     display: block;
 }
 
-.header .inner .nav li .depth-02 li:hover a {
+.header .inner .nav.pc li .depth-02 li:hover {
     color: #fff;
+}
+
+.header .inner .nav.pc li .depth-02 .depth-03 {
+    color: #A1A1A1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.header .inner .nav.pc .depth-02 li:hover .depth-03 {
+    max-height: 0;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header .inner .nav.pc .depth-02 .depth-03 li:first-child {
+    margin-top: 12px;
 }
 
 .header .inner .util {
@@ -227,7 +274,7 @@ h6 {
 }
 
 .header .inner .util .search_btn img {
-    width: 26px;
+    width: 32px;
     display: block;
 }
 
@@ -246,6 +293,7 @@ h6 {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    z-index: 1000;
 }
 
 .header .inner .util .search_box.active {
@@ -265,9 +313,15 @@ h6 {
 
 /* --- 푸터 --- */
 #footer {
+    background-color: #000000; 
+}
+
+#footer .border {
+    width: 100%;
+    padding: 50px 0;
+    border-radius: 30px 30px 0 0;
     background-color: #333333;
     color: #ffffff;
-    padding: 50px 0;
 }
 
 #footer .inner {
@@ -386,3 +440,268 @@ h6 {
 }
 
 #footer .inner .text_wrap .info .text ul li {}
+
+
+/* --- 1024 이하일 때(태블릿 ver) --- */
+@media screen and (max-width: 1024px) {
+    h6 {
+        font-size: 27px;
+    }
+
+    .header .inner {
+        width: 86.81%;
+        height: 60px;
+    }
+
+    .header .inner .logo {
+        width: 90px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header .inner .menu {
+        transition: transform 0.4s ease;
+    }
+
+    .header .inner .menu.open {
+        transform: rotate(360deg);
+    }
+
+    .header .inner .menu .menu-icon {
+        display: block;
+        width: 32px;
+    }
+
+    .header .inner .menu .menu-icon {
+        transition: opacity 0.2s ease;
+    }
+
+    .header .inner .menu.open .menu-icon {
+        content: url('../img/icon_close.png');
+    }
+
+    .header .inner .nav.pc {
+        display: none;
+    }
+
+    .header .inner .util .login {
+        display: none;
+    }
+
+    /* 모바일 메뉴탭 */
+    .header .inner .nav.mobile {
+        width: 73.50%;
+        height: 100vh;
+        padding: 50px 4%;
+        gap: 22px;
+        background-color: rgba(51, 51, 51, 0.9);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        transition: left 0.4s ease;
+        z-index: 100;
+    }
+
+    .header .inner .nav.mobile.active {
+        left: 0;
+    }
+
+    .header .inner .nav.mobile .depth-01-list {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+    }
+
+    .header .inner .nav.mobile .depth-01-list .depth-01 {
+        font-weight: 600;
+        text-align: center;
+        display: block;
+        width: 90px;
+        transition: all 0.3s ease;
+    }
+
+    .header .inner .nav.mobile .line {
+        width: 1px;
+        height: 100vh;
+        background-color: rgba(161, 161, 161, 0.5);
+        position: absolute;
+        top: -50px;
+        left: calc(4% + 120px);
+    }
+
+    .header .inner .nav.mobile .depth-01-list .depth-01.active {
+        color: #FEE379;
+    }
+
+    .header .inner .nav.mobile .depth-01-list .depth-01.sub_btn {
+        height: 30px;
+        line-height: 30px;
+        margin-left: 0;
+    }
+
+    .header .inner .nav.mobile .depth-01-list .depth-01.sub_btn.active {
+        background-color: #333;
+        color: #FEE379;
+        border: 1px solid #FEE379;
+    }
+
+    .header .inner .nav.mobile .depth-02 {
+        position: absolute;
+        top: 50px;
+        left: 30%;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .header .inner .nav.mobile .depth-02.active {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    .header .inner .nav.mobile .depth-02 li {
+        padding: 0 0 15px 0;
+        font-weight: 400;
+    }
+
+    .header .inner .nav.mobile .depth-02 .depth-03 {
+        font-weight: 300;
+        padding: 0 10px;
+        display: none;
+    }
+
+    .header .inner .nav.mobile .depth-03.active {
+        display: block;
+    }
+
+    .header .inner .nav.mobile .depth-02 .depth-03 li:first-child {
+        margin-top: 5px;
+    }
+
+    .header .inner .nav.mobile .depth-02 .depth-03 li {
+        padding: 5px;
+        color: #A1A1A1;
+    }
+
+    .header .inner .nav.mobile .util_mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        margin-top: 160px;
+    }
+
+    .header .inner .nav.mobile .util_mobile button {
+        color: #A1A1A1;
+        text-align: left;
+        padding: 5px;
+    }
+
+    /* 태블릿 푸터 */
+    #footer .inner {
+        width: 86.81%;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    #footer .inner .logo {
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    #footer .inner .logo a {
+        width: 180px;
+    }
+
+    #footer .inner .text_wrap {
+        width: 100%;
+        gap: 15px;
+    }
+}
+
+/* --- 500 이하일 때(모바일 ver) --- */
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 100px;
+    }
+
+    h4 {
+        font-size: 50px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    /* 모바일 푸터 */
+    #footer .inner {
+        width: 88.8%;
+        gap: 23px;
+    }
+
+    #footer .inner .logo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #footer .inner .logo a {
+        width: 120px;
+    }
+
+    #footer .inner .text_wrap {
+        width: 100%;
+        gap: 20px;
+    }
+
+    #footer .inner .text_wrap .footer_nav ul {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    #footer .inner .text_wrap .info {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #footer .inner .text_wrap .info .text ul {
+        font-size: 13px;
+        gap: 3px;
+    }
+/* 
+
+
+#footer .inner .text_wrap .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .inner .text_wrap .info .text {}
+
+#footer .inner .text_wrap .info .text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 300;
+} */
+}
