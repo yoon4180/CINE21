@@ -413,22 +413,22 @@
 }
 
 
-/* ---- section2 ----- */
+/* ---- section3 ----- */
 /* slide1 */
-#section2 .inner {
+#section3 .inner {
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-#section2 .inner>img {
+#section3 .inner>img {
     width: 81.25%;
     height: 100vh;
     object-fit: cover;
     display: block;
 }
 
-#section2 .inner .overlay {
+#section3 .inner .overlay {
     width: 960px;
     height: 100vh;
     background: #000000;
@@ -438,7 +438,7 @@
     right: 0;
 }
 
-#section2 .inner .overlay .text {
+#section3 .inner .overlay .text {
     width: 450px;
     color: #ffffff;
     text-align: right;
@@ -450,47 +450,47 @@
     right: 10%;
 }
 
-#section2 .inner .overlay .text p {
+#section3 .inner .overlay .text p {
     line-height: 150%;
     text-align: justify;
 }
 
-#section2 .inner .overlay .text .more_btn {
+#section3 .inner .overlay .text .more_btn {
     display: flex;
     gap: 5px;
     align-items: center;
     justify-content: flex-end;
 }
 
-#section2 .inner .overlay .text .more_btn span {
+#section3 .inner .overlay .text .more_btn span {
     font-size: 14px;
     font-weight: 400;
     color: #a1a1a1;
 }
 
-#section2 .inner .overlay .text .more_btn img {
+#section3 .inner .overlay .text .more_btn img {
     width: 15px;
     height: 15px;
 }
 
 
-/* ---- section3 ----- */
-#section3 .content button {
+/* ---- section4 ----- */
+#section4 .content button {
     display: none;
 }
 
-#section3 {
+#section4 {
     width: 100%;
     height: 100vh;
     background: url('../img/bg.png') center center no-repeat;
     background-size: cover;
 }
 
-#section3 .inner {
+#section4 .inner {
     margin: 80px 0 0 165px;
 }
 
-#section3 .inner .title {
+#section4 .inner .title {
     display: flex;
     gap: 15px;
     align-items: center;
@@ -500,33 +500,33 @@
 
 
 
-#section3 .inner .title img {
+#section4 .inner .title img {
     width: 50px;
     height: 62px;
 }
 
-#section3 .inner .boxoffice_slide {
+#section4 .inner .boxoffice_slide {
     padding: 20px;
 }
 
-#section3 .inner .swiper-slide {
+#section4 .inner .swiper-slide {
     color: #ffffff;
 }
 
-#section3 .inner .swiper-slide .poster {
+#section4 .inner .swiper-slide .poster {
     width: 320px;
     height: 457px;
     position: relative;
 }
 
-#section3 .inner .swiper-slide .poster img {
+#section4 .inner .swiper-slide .poster img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-#section3 .inner .swiper-slide .poster strong {
+#section4 .inner .swiper-slide .poster strong {
     font-family: "Allerta Stencil", sans-serif;
     font-size: 65px;
     font-weight: 400;
@@ -537,7 +537,7 @@
 }
 
 /* poster위에 올라올 overlay */
-#section3 .inner .swiper-slide .poster .overlay {
+#section4 .inner .swiper-slide .poster .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -551,28 +551,28 @@
     transition: all 0.3s ease;
 }
 
-#section3 .inner .swiper-slide .poster:hover .overlay {
+#section4 .inner .swiper-slide .poster:hover .overlay {
     opacity: 1;
     visibility: visible;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     transform: translateY(0);
 }
 
-#section3 .inner .swiper-slide .poster .overlay h5 {
+#section4 .inner .swiper-slide .poster .overlay h5 {
     padding: 15px 0;
     border-bottom: 1px solid #ffffff;
 }
 
-#section3 .inner .swiper-slide .poster .overlay ul {
+#section4 .inner .swiper-slide .poster .overlay ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px 0;
 }
 
-#section3 .inner .swiper-slide .poster .overlay ul li {}
+#section4 .inner .swiper-slide .poster .overlay ul li {}
 
-#section3 .inner .swiper-slide .poster .overlay ul li span {
+#section4 .inner .swiper-slide .poster .overlay ul li span {
     font-size: 15px;
     font-weight: 600;
     color: #C44B4B;
@@ -580,7 +580,7 @@
     margin-bottom: 5px;
 }
 
-#section3 .inner .swiper-slide .poster .overlay a {
+#section4 .inner .swiper-slide .poster .overlay a {
     font-size: 14px;
     font-weight: 500;
     color: #888888;
@@ -589,7 +589,7 @@
     justify-content: flex-end;
 }
 
-#section3 .inner .swiper-slide .content {
+#section4 .inner .swiper-slide .content {
     text-align: center;
     margin-top: 18px;
     display: flex;
@@ -597,49 +597,49 @@
     gap: 8px;
 }
 
-#section3 .inner .swiper-slide .content .rank {
+#section4 .inner .swiper-slide .content .rank {
     display: flex;
     gap: 9px;
     align-items: center;
     justify-content: center;
 }
 
-#section3 .inner .swiper-slide .content .rank .star {
+#section4 .inner .swiper-slide .content .rank .star {
     display: flex;
     gap: -5px;
 }
 
-#section3 .inner .swiper-slide .content .rank .star img {
+#section4 .inner .swiper-slide .content .rank .star img {
     width: 22px;
     margin-right: -5px;
 }
 
-#section3 .inner .swiper-slide .content .rank p {
+#section4 .inner .swiper-slide .content .rank p {
     color: #FEE379;
 }
 
-#section3 .inner .swiper-slide .content .info {
+#section4 .inner .swiper-slide .content .info {
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
 
-/* ---- section4 ----- */
+/* ---- section5 ----- */
 /* slide1 */
-#section4 .inner {
+#section5 .inner {
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-#section4 .inner>img {
+#section5 .inner>img {
     width: 62.65%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-#section4 .inner .overlay {
+#section5 .inner .overlay {
     width: 57.70%;
     height: 100%;
     background: #000000;
@@ -649,7 +649,7 @@
     right: 0;
 }
 
-#section4 .inner .overlay_btm {
+#section5 .inner .overlay_btm {
     width: 100%;
     height: 33%;
     background: #000000;
@@ -659,13 +659,13 @@
     left: 0;
 }
 
-#section4 .slide_inner {
+#section5 .slide_inner {
     width: 79.37%;
     margin: 0 auto;
     position: relative;
 }
 
-#section4 .slide .text_wrap {
+#section5 .slide .text_wrap {
     display: flex;
     flex-direction: column;
     gap: 3px;
@@ -675,62 +675,62 @@
     color: #ffffff;
 }
 
-#section4 .slide .text_wrap .category {
+#section5 .slide .text_wrap .category {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-#section4 .slide .text_wrap .category img {
+#section5 .slide .text_wrap .category img {
     width: 40px;
     height: 40px;
 }
 
-#section4 .slide .text_wrap .first {
+#section5 .slide .text_wrap .first {
     display: flex;
     gap: 36px;
     align-items: center;
 }
 
-#section4 .slide .text_wrap .first .name {
+#section5 .slide .text_wrap .first .name {
     display: flex;
     gap: 18px;
     align-items: center;
 }
 
-#section4 .slide .text_wrap .first .name strong {
+#section5 .slide .text_wrap .first .name strong {
     font-family: "Allerta Stencil", sans-serif;
     font-size: 60px;
     font-weight: 400;
 }
 
-#section4 .slide .text_wrap .first .name p {
+#section5 .slide .text_wrap .first .name p {
     font-size: 45px;
     font-weight: 700;
 }
 
-#section4 .slide .text_wrap .first .info_wrap {
+#section5 .slide .text_wrap .first .info_wrap {
     display: flex;
     gap: 18px;
     align-items: center;
 }
 
-#section4 .slide .text_wrap .first .info_wrap img {
+#section5 .slide .text_wrap .first .info_wrap img {
     width: 30px;
     height: 30px;
 }
 
-#section4 .slide .text_wrap .first .info p {
+#section5 .slide .text_wrap .first .info p {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 7px;
 }
 
-#section4 .slide .text_wrap .first .info span {
+#section5 .slide .text_wrap .first .info span {
     color: #a1a1a1;
 }
 
-#section4 .list {
+#section5 .list {
     width: 480px;
     display: flex;
     flex-wrap: wrap;
@@ -741,28 +741,28 @@
     right: 0;
 }
 
-#section4 .list .item {
+#section5 .list .item {
     width: 210px;
     color: #ffffff;
     text-align: center;
     position: relative;
 }
 
-#section4 .list .item .poster_image {
+#section5 .list .item .poster_image {
     width: 100%;
     height: 300px;
     margin-bottom: 13px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
-#section4 .list .item .poster_image img {
+#section5 .list .item .poster_image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-#section4 .list .item strong {
+#section5 .list .item strong {
     font-family: "Allerta Stencil", sans-serif;
     font-size: 65px;
     font-weight: 400;
@@ -881,13 +881,13 @@
         width: 100%;
     }
 
-    /* ---- 태블릿 section2 ----- */
-    #section2 .inner>img {
+    /* ---- 태블릿 section3 ----- */
+    #section3 .inner>img {
         width: 100%;
         height: 69.85%;
     }
 
-    #section2 .inner .overlay {
+    #section3 .inner .overlay {
         width: 100%;
         height: 50.25%;
         background: #000000;
@@ -897,7 +897,7 @@
         bottom: 0;
     }
 
-    #section2 .inner .overlay .text {
+    #section3 .inner .overlay .text {
         width: 86.81%;
         align-items: center;
         text-align: center;
@@ -907,39 +907,39 @@
         transform: translateX(50%);
     }
 
-    #section2 .inner .overlay .text p {
+    #section3 .inner .overlay .text p {
         padding: 0 20px;
         text-align: center;
     }
 
-    /* ---- 태블릿 section3 ----- */
-    #section3 .inner .swiper-slide .poster .overlay {
+    /* ---- 태블릿 section4 ----- */
+    #section4 .inner .swiper-slide .poster .overlay {
         display: none;
     }
 
-    #section3 .inner {
+    #section4 .inner {
         margin: 0 0 0 6.5%;
     }
 
-    #section3 .inner .title {
+    #section4 .inner .title {
         margin-bottom: 40px;
     }
 
-    #section3 .inner .swiper-slide .poster {
+    #section4 .inner .swiper-slide .poster {
         width: 100%;
         position: relative;
     }
 
-    #section3 .inner .swiper-slide .poster img {
+    #section4 .inner .swiper-slide .poster img {
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     }
 
-    #section3 .content {
+    #section4 .content {
         align-items: center;
         margin-right: 20px;
     }
 
-    #section3 .content button {
+    #section4 .content button {
         display: block;
         width: 144px;
         height: 36px;
@@ -948,6 +948,99 @@
         background-color: #ffffff;
         color: #B1060F;
         margin-top: 7px;
+    }
+
+    /* ---- 태블릿 section5 ----- */
+    /* slide1 */
+    #section5 .inner>img {
+        width: 100%;
+        height: 70.18%;
+    }
+
+    #section5 .inner .overlay_btm {
+        height: 59.79%;
+        background: #000000;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 38%);
+    }
+
+    #section5 .inner .overlay {
+        display: none;
+    }
+
+    #section5 .inner .slide_inner {
+        width: 86.81%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #section5 .slide .text_wrap {
+        position: static;
+        gap: 2px;
+    }
+
+    #section5 .slide .text_wrap .category img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #section5 .slide .text_wrap .first {
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #section5 .slide .text_wrap .first .name {
+        gap: 12px;
+    }
+
+    #section5 .slide .text_wrap .first .name strong {
+        font-size: 50px;
+    }
+
+    #section5 .slide .text_wrap .first .name p {
+        font-size: 35px;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap {
+        gap: 14px;
+        align-items: flex-start;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap img {
+        width: 24px;
+        height: 24px;
+    }
+
+    #section5 .list {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        position: static;
+    }
+
+    #section5 .list .item {
+        width: 22.92%;
+    }
+
+    #section5 .list .item:nth-child(even) {
+        transform: translateY(30px);
+    }
+
+    #section5 .list .item .poster_image {
+        height: 238px;
+    }
+
+    #section5 .list .item strong {
+        font-size: 45px;
+        position: absolute;
+        left: -18px;
+        bottom: 20px;
     }
 }
 
@@ -991,7 +1084,7 @@
         min-width: 100%;
         background-color: rgba(225, 228, 219, 0.7);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        padding: 20px 40px 70px;
+        padding: 20px 30px 60px;
         border-radius: 20px 20px 0 0;
     }
 
@@ -1000,7 +1093,6 @@
     }
 
     #section0 .inner .content .text_wrap {
-        padding: 15px 20px;
         background-color: transparent;
         box-shadow: none;
         padding: 0;
@@ -1011,11 +1103,11 @@
         background-color: transparent;
     }
 
-    .content .text_wrap ul li:nth-child(n+7) {
+    .content .text_wrap ul li:nth-child(n+6) {
         display: none;
     }
 
-    .content .text_wrap>ul li:nth-child(6)::after {
+    .content .text_wrap>ul li:nth-child(5)::after {
         content: " ···";
         color: #000000;
     }
@@ -1032,12 +1124,12 @@
         padding: 13px 12px;
     }
 
+    /* ---- 모바일 section1 ----- */
     #section1 .inner {
         width: 100%;
         padding: 0 20px;
     }
 
-    /* ---- 모바일 section1 ----- */
     #section1 .inner .left {
         height: 400px;
         gap: 0;
@@ -1098,25 +1190,25 @@
         z-index: 1;
     }
 
-    /* ---- 모바일 section2 ----- */
-    #section2 .inner>img {
+    /* ---- 모바일 section3 ----- */
+    #section3 .inner>img {
         width: 100%;
         height: 72.48%;
     }
 
-    #section2 .inner .overlay {
+    #section3 .inner .overlay {
         width: 100%;
         height: 44.84%;
         background: #000000;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
     }
 
-    #section2 .inner .overlay .text {
+    #section3 .inner .overlay .text {
         width: 88.8%;
         bottom: 70px;
     }
 
-    #section2 .inner .overlay .text p {
+    #section3 .inner .overlay .text p {
         padding: 0 10px;
         display: -webkit-box;
         -webkit-line-clamp: 5;
@@ -1124,72 +1216,135 @@
         overflow: hidden;
     }
 
-    #section2 .inner .overlay .text .more_btn span {
+    #section3 .inner .overlay .text .more_btn span {
         font-size: 13px;
         font-weight: 400;
         color: #a1a1a1;
     }
 
-    #section2 .inner .overlay .text .more_btn img {
+    #section3 .inner .overlay .text .more_btn img {
         width: 13px;
         height: 13px;
     }
 
-    /* ---- 모바일 section3 ----- */
-    #section3 .inner {
+    /* ---- 모바일 section4 ----- */
+    #section4 .inner {
         margin: 0 0 0 5.6%;
     }
 
-    #section3 .inner .title {
+    #section4 .inner .title {
         margin-bottom: 10px;
         padding-left: 10px;
     }
 
-    #section3 .inner .title img {
+    #section4 .inner .title img {
         width: 32px;
         height: 40px;
-    } 
+    }
 
-    #section3 .inner .boxoffice_slide {
+    #section4 .inner .boxoffice_slide {
         padding: 10px;
     }
 
-    #section3 .inner .swiper-slide .poster {
+    #section4 .inner .swiper-slide .poster {
         width: 100%;
         height: 230px;
     }
 
-    #section3 .inner .swiper-slide .poster strong {
+    #section4 .inner .swiper-slide .poster strong {
         font-size: 35px;
         left: 2px;
     }
 
-    #section3 .inner .swiper-slide .poster .overlay h5 {
+    #section4 .inner .swiper-slide .poster .overlay h5 {
         padding: 15px 0;
         border-bottom: 1px solid #ffffff;
     }
 
-    #section3 .inner .swiper-slide .poster img {
+    #section4 .inner .swiper-slide .poster img {
         box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
     }
 
-    #section3 .content {
+    #section4 .content {
         align-items: center;
         margin-right: 20px;
         gap: 5px;
     }
 
-    #section3 .content button {
+    #section4 .content button {
         width: 110px;
         height: 32px;
     }
 
-    #section3 .inner .swiper-slide .content .rank {
+    #section4 .inner .swiper-slide .content .rank {
         gap: 4px;
     }
 
-    #section3 .inner .swiper-slide .content .rank .star img {
+    #section4 .inner .swiper-slide .content .rank .star img {
         width: 20px;
         margin-right: -5px;
+    }
+
+    /* ---- 모바일 section5 ----- */
+    /* slide1 */
+    #section5 .inner>img {
+        width: 100%;
+        height: 49.26%;
+        position: absolute;
+        top: 19.45%;
+        left: 0;
+    }
+
+    #section5 .inner .overlay_btm {
+        height: 45.56%;
+        background: #000000;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 29%);
+    }
+
+    #section5 .inner .overlay {
+        display: block;
+        width: 100%;
+        height: 27.70%;
+        background: #000000;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+    }
+
+    #section5 .inner .slide_inner {
+        width: 88.8%;
+        gap: 0;
+        top: 70px;
+    }
+
+    #section5 .slide .text_wrap .category img {
+        width: 23px;
+        height: 23px;
+    }
+
+    #section5 .slide .text_wrap .first {
+        gap: 5px;
+    }
+
+    #section5 .slide .text_wrap .first .name strong {
+        font-size: 35px;
+    }
+
+    #section5 .slide .text_wrap .first .name p {
+        font-size: 25px;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap {
+        gap: 0px;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap p {
+        font-size: 14px;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap span {
+        font-size: 14px;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap img {
+        display: none;
     }
 }
