@@ -26,7 +26,8 @@
             var myFullpage = new fullpage('#fullpage', {
                 anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
                 menu: '#menu',
-                slidesNavigation: true,
+                navigation: true, //세로 슬라이드 개수
+                slidesNavigation: true, //가로 슬라이드 개수
                 lazyLoad: true,
                 credits: { enabled: false },
                 afterRender: function () {
@@ -399,6 +400,7 @@
         <div class="section" id="section1">
             <div class="slide active" id="slide1">
                 <img src="img/book_shadow.png" alt="책그림자" class="bg">
+                <img src="img/coffee.png" alt="커피" class="coffee">
                 <div class="inner">
                     <div class="left">
                         <div class="title">
@@ -429,8 +431,10 @@
                     </div><!-- right -->
                 </div><!-- inner -->
             </div><!-- #slide1 -->
+
             <div class="slide" id="slide2">
                 <img src="img/book_shadow.png" alt="책그림자" class="bg">
+                <img src="img/coffee.png" alt="커피" class="coffee">
                 <div class="inner">
                     <div class="left">
                         <div class="title">
@@ -467,6 +471,7 @@
             <!-- 모바일용 슬라이드 -->
             <div class="slide active mobile" id="mslide1">
                 <img src="img/book_shadow_left.png" alt="책그림자" class="bg">
+                <img src="img/coffee.png" alt="커피" class="coffee">
                 <div class="inner">
                     <div class="left">
                         <div class="title">
@@ -482,8 +487,10 @@
                     </div><!-- left -->
                 </div><!-- inner -->
             </div><!-- #slide1 -->
+
             <div class="slide mobile" id="mslide2">
                 <img src="img/book_shadow_right.png" alt="책그림자" class="bg">
+                <img src="img/coffee.png" alt="커피" class="coffee">
                 <div class="inner">
                     <div class="right">
                         <div class="content01">
@@ -501,8 +508,10 @@
                     </div><!-- right -->
                 </div><!-- inner -->
             </div><!-- #slide1 -->
+
             <div class="slide mobile" id="mslide3">
                 <img src="img/book_shadow_left.png" alt="책그림자" class="bg">
+                <img src="img/coffee.png" alt="커피" class="coffee">
                 <div class="inner">
                     <div class="left">
                         <div class="title">
@@ -520,8 +529,10 @@
                     </div><!-- left -->
                 </div><!-- inner -->
             </div><!-- #slide2 -->
+
             <div class="slide mobile" id="mslide4">
                 <img src="img/book_shadow_right.png" alt="책그림자" class="bg">
+                <img src="img/coffee.png" alt="커피" class="coffee">
                 <div class="inner">
                     <div class="right">
                         <div class="content01">
@@ -544,7 +555,34 @@
 
         <!-- 추가해야됨... -->
         <div class="section" id="section2">
-
+            <div class="inner">
+                <div class="title">
+                    <h4>CINE21 20</h4>
+                    <strong>자평</strong>
+                </div><!-- title -->
+                <div class="list">
+                    <div class="item">
+                        <p class="movie">극장판 체인소 맨: 레제편</p>
+                        <div class="review">
+                            <p class="review_text">예술은 폭발이다.</br>
+                                레제는 미래다.</br>
+                                알고도 당하는 순애의 맛</p>
+                            <p class="name">송경원</p>
+                        </div><!-- review -->
+                        <div class="rank">
+                            <div class="star">
+                                <img src="img/icon_star333_fill.png" alt="별점">
+                                <img src="img/icon_star333_fill.png" alt="별점">
+                                <img src="img/icon_star333_fill.png" alt="별점">
+                                <img src="img/icon_star333_fill.png" alt="별점">
+                                <img src="img/icon_star333_empty.png" alt="별점">
+                            </div><!-- star -->
+                            <span>8</span>
+                        </div><!-- rank -->
+                        <button class="write">리뷰쓰기</button>
+                    </div><!-- item -->
+                </div><!-- list -->
+            </div><!-- inner -->
         </div><!-- #section2 -->
 
         <div class="section" id="section3">

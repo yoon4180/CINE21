@@ -25,12 +25,27 @@
     right: 15px;
 }
 
-/* 가로 슬라이드 개수 동그라미 */
-#fp-nav ul,
-.fp-slidesNav ul {
+/* 세로 슬라이드 내비게이션 */
+#fp-nav.fp-right {
+    position: fixed;
+    bottom: 15px;
+    top: auto;
+    left: 10px;
+    right: auto;
+    transform: none;
+}
+
+.fp-right ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 가로 슬라이드 내비게이션 */
+#fp-nav.fp-bottom ul,
+.fp-slidesNav.fp-bottom ul {
     display: flex;
     justify-content: flex-end;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 #fp-nav ul li,
@@ -43,6 +58,7 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 5px rgb(255, 255, 255);
 }
+
 
 /* ---- section0 ----- */
 /* slide1 */
@@ -265,6 +281,14 @@
     z-index: -1;
 }
 
+#section1 .coffee {
+    width: 390px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+}
+
 #section1 .inner {
     max-width: 1524px;
     width: calc(100% - 40px);
@@ -409,6 +433,12 @@
 
 #section1 #slide2 .inner .right .content03 p {
     width: 100%;
+}
+
+
+/* ---- 추가하는 중 section2 ----- */
+#section2 {
+    background: url('../img/cork_bg.jpg') center center ;
 }
 
 
@@ -857,6 +887,14 @@
         left: 0;
         display: block;
         z-index: -1;
+    }
+
+    #section1 .coffee {
+        width: 210px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
     }
 
     #section1 .inner {
