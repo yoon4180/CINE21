@@ -213,7 +213,6 @@
         transform: translateY(-15px);
     }
 
-    /* 위로 10px */
     100% {
         transform: translateY(0);
     }
@@ -1346,5 +1345,28 @@
 
     #section5 .slide .text_wrap .first .info_wrap img {
         display: none;
+    }
+
+    #section5 .inner .slide_inner {
+        bottom: 60px;
+    }
+
+    #section5 .inner .slide_inner h5 {
+        font-size: 14px;
+    }
+
+    #section5 .list {
+        position: absolute;
+        bottom: 0;
+    }
+
+    #section5 .list .item .poster_image {
+        height: 160px;
+    }
+
+    #section5 .list .item strong {
+        font-size: 30px;
+        left: -8px;
+        bottom: 35px;
     }
 }
