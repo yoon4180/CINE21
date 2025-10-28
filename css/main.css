@@ -438,9 +438,155 @@
 
 /* ---- 추가하는 중 section2 ----- */
 #section2 {
-    background: url('../img/cork_bg.jpg') center center ;
+    background: url('../img/cork_bg.png') no-repeat center center;
+    background-size: cover;
 }
 
+#section2 .inner {
+    width: 79.37%;
+    margin: 0 auto;
+}
+
+#section2 .inner .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+
+#section2 .inner .title h4 {
+    color: #333333;
+}
+
+#section2 .inner .title strong {
+    color: #333333;
+    font-size: 80px;
+    font-weight: 800;
+}
+
+#section2 .inner .list {
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 85px;
+    row-gap: 60px;
+}
+
+#section2 .inner .list .item {
+    width: 235px;
+    height: 283px;
+    padding: 21px 15px;
+    background-color: #FEE379;
+    color: #333333;
+    font-family: 'KyoboHandwriting2020ParkDoYeon';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+#section2 .inner .list .item:nth-child(even) {
+    transform: translateY(20px);
+}
+
+#section2 .inner .list .item:nth-child(6) {
+    margin-left: 100px;
+    transform: translateY(0);
+}
+
+#section2 .inner .list .item:nth-child(7) {
+    transform: translateY(20px);
+}
+
+#section2 .inner .list .item:nth-child(8) {
+    transform: translateY(0);
+}
+
+#section2 .inner .list .item .movie {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#section2 .inner .list .item .review {}
+
+#section2 .inner .list .item .review .review_text {
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 9px;
+}
+
+#section2 .inner .list .item .review .name {
+    font-size: 14px;
+}
+
+#section2 .inner .list .item .review .name::before {
+    content: '- ';
+}
+
+#section2 .inner .list .item .review .name::after {
+    content: ' -';
+}
+
+#section2 .inner .list .item .rank {
+    display: flex;
+    align-items: center;
+}
+
+#section2 .inner .list .item .rank .star {
+    display: flex;
+}
+
+#section2 .inner .list .item .rank .star img {
+    width: 22px;
+    height: 22px;
+    display: block;
+    margin-right: -5px;
+}
+
+#section2 .inner .list .item .rank span {
+    font-size: 16px;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+#section2 .inner .list .item .write {
+    width: 175px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#section2 .inner .list .item .write:hover {
+    background-color: #fff;
+}
+
+#section2 .inner .pen_btn {
+    position: absolute;
+    bottom: 60px;
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section2 .inner .pen_btn .pen_img {
+    width: 500px;
+}
+
+#section2 .inner .pen_btn .pen_img img {
+    width: 100%;
+    display: block;
+}
+
+#section2 .inner .pen_btn h5 {
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
 
 /* ---- section3 ----- */
 /* slide1 */
@@ -917,6 +1063,52 @@
     #section1 #mslide4 .inner .right .content03 p {
         width: 100%;
     }
+
+
+    /* ---- 태블릿 section2 ----- */
+    #section2 .inner .list .item.pc {
+        display: none;
+    }
+
+    #section2 .inner {
+        width: 90.52%;
+    }
+
+    #section2 .inner .title {
+        padding-top: 0;
+    }
+
+    #section2 .inner .list {
+        gap: 20px;
+        row-gap: 60px;
+        padding-bottom: 60px;
+    }
+
+    #section2 .inner .list .item:nth-child(even) {
+        transform: translateY(40px);
+    }
+
+    #section2 .inner .list .item:nth-child(6) {
+        margin-left: 0;
+        transform: translateY(0);
+    }
+
+    #section2 .inner .list .item:nth-child(4) {
+        transform: translateY(0);
+    }
+
+    #section2 .inner .list .item:nth-child(5) {
+        transform: translateY(40px);
+    }
+
+    #section2 .inner .pen_btn {
+        position: absolute;
+        bottom: 70px;
+        /* 엥 */
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
 
     /* ---- 태블릿 section3 ----- */
     #section3 .inner>img {
