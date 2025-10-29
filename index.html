@@ -22,7 +22,7 @@
     <script>
         window.onload = () => {
 
-            /* 풀페이지 */
+            // 📌풀페이지
             var myFullpage = new fullpage('#fullpage', {
                 anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
                 menu: '#menu',
@@ -36,9 +36,9 @@
                     // ✅ URL 해시 제거 (혹시 남아있으면)
                     history.replaceState(null, null, ' ');
                 },
-            });
+            });//풀페이지 end
 
-            /* 헤더 */
+            // 📌헤더
             let searchBtn = document.querySelector('.search_btn');
             let searchBox = document.querySelector('.search_box');
 
@@ -46,7 +46,7 @@
                 searchBox.classList.toggle('active')
             });
 
-            /* PC 헤더 depth-02, 03 효과 */
+            // PC 헤더 depth-02, 03 효과
             document.querySelectorAll('.header .inner .nav.pc .depth-02 li').forEach(li => {
                 const subMenu = li.querySelector('.depth-03');
 
@@ -65,7 +65,7 @@
                 }
             });
 
-            /* TABLET, MOBILE 헤더 메뉴 나타나고 사라짐 */
+            // TABLET, MOBILE 헤더 메뉴 나타나고 사라짐
             const menuopen = $('.menu')
             const mobileNav = $('.nav.mobile');
 
@@ -74,11 +74,11 @@
                 menuopen.toggleClass('open')//메뉴 열릴 때 아이콘 변경
             });
 
-            /* TABLET, MOBILE 헤더 효과 */
+            // TABLET, MOBILE 헤더 효과
             const depth01Links = $('.nav.mobile .depth-01');
             const depth02Links = $('.nav.mobile .depth-02 li')
 
-            //1차 메뉴 클릭 시 2차 메뉴 나타나고 사라짐
+            // 1차 메뉴 클릭 시 2차 메뉴 나타나고 사라짐
             depth01Links.click(function () {
                 depth01Links.removeClass('active');
                 $(this).addClass('active');
@@ -94,10 +94,32 @@
 
                 $(this).find('.depth-03').toggle('active');
                 //find -> 자식지정
-            })
+            });// 헤더 end
 
+            // 📌20자평 팝업 <-- 안됨
+            $(function () {
+                const $penBtn = $('.pen_btn');
+                const $popup = $('.popup');
+                const $overlay = $('.overlay');
+                const $closeBtn = $('.popup_close');
 
-            /* 박스오피스 슬라이드 */
+                $penBtn.on('click', function () {
+                    $popup.addClass('active');
+                    $overlay.addClass('active');
+                });
+
+                $closeBtn.on('click', function () {
+                    $popup.removeClass('active');
+                    $overlay.removeClass('active');
+                });
+
+                $overlay.on('click', function () {
+                    $popup.removeClass('active');
+                    $overlay.removeClass('active');
+                });
+            });// 20자평 end
+
+            // 📌박스오피스 슬라이드
             var swiper = new Swiper(".boxoffice_slide", {
                 slidesPerView: 4.5,
                 spaceBetween: 75,
@@ -119,8 +141,8 @@
                         spaceBetween: 75,
                     }
                 }
-            });
-        }
+            });// 박스오피스 end
+        };//script end
     </script>
 </head>
 
@@ -553,8 +575,9 @@
 
         </div><!-- #section1 -->
 
-        <!-- 추가해야됨... -->
         <div class="section" id="section2">
+            <!-- 팝업 나타날 때 배경 -->
+            <div class="overlay"></div>
             <div class="inner">
                 <div class="title">
                     <h4>CINE21 20</h4>
@@ -721,14 +744,47 @@
                         </div><!-- rank -->
                         <button class="write">리뷰쓰기</button>
                     </div><!-- item -->
-
                 </div><!-- list -->
+
                 <div class="pen_btn">
                     <div class="pen_img">
                         <img src="img/pen.png" alt="리뷰작성 버튼">
                     </div><!-- pen_img -->
                     <h5>다른 영화의 리뷰를 남기려면 펜을 터치해주세요</h5>
                 </div><!-- pen_btn -->
+
+                <div class="popup">
+                    <button class="popup_close"><img src="img/icon_close.png" alt=""></button>
+                    <div class="wrap">
+                        <div class="content">
+                            <div class="item">
+                                <h2>작품명</h2>
+                                <div class="title_search">
+                                    <img src="img/icon_search333.png" alt="검색 아이콘" class="icon_search">
+                                    <input type="text" name="name" id="movie_title" required
+                                        placeholder="영화 · 시리즈 이름을 입력해주세요.">
+                                </div><!-- title_search -->
+                            </div><!-- item -->
+                            <div class="item">
+                                <h2>별점</h2>
+                                <div class="star">
+                                    <img src="img/icon_starfff_empty.png" alt="별점">
+                                    <img src="img/icon_starfff_empty.png" alt="별점">
+                                    <img src="img/icon_starfff_empty.png" alt="별점">
+                                    <img src="img/icon_starfff_empty.png" alt="별점">
+                                    <img src="img/icon_starfff_empty.png" alt="별점">
+                                    <p>0.0</p>
+                                </div><!-- star -->
+                            </div><!-- item -->
+                            <div class="item">
+                                <h2>리뷰</h2>
+                                <textarea name="" id="" row="7" cols="80" required
+                                    placeholder="선택하신 작품의 리뷰를 입력해주세요."></textarea>
+                            </div><!-- item -->
+                        </div><!-- content -->
+                        <button class="write_btn">별점·리뷰 남기기</button>
+                    </div><!-- wrap -->
+                </div><!-- popup -->
             </div><!-- inner -->
         </div><!-- #section2 -->
 
