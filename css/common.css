@@ -484,6 +484,7 @@ h6 {
 
     .header .inner .menu {
         transition: transform 0.4s ease;
+        display: block;
     }
 
     .header .inner .menu.open {

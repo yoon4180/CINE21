@@ -436,7 +436,7 @@
 }
 
 
-/* ---- 추가하는 중 section2 ----- */
+/* ---- section2 ----- */
 #section2 {
     background: url('../img/cork_bg.png') no-repeat center center;
     background-size: cover;
@@ -1079,9 +1079,10 @@
     }
 
     #section2 .inner .list {
-        gap: 20px;
+        gap: 18px;
         row-gap: 60px;
         padding-bottom: 60px;
+        justify-content: center;
     }
 
     #section2 .inner .list .item:nth-child(even) {
@@ -1104,8 +1105,8 @@
     #section2 .inner .pen_btn {
         position: absolute;
         bottom: 70px;
-        /* 엥 */
-        right: 50%;
+        right: auto;
+        left: 50%;
         transform: translateX(-50%);
     }
 
@@ -1417,6 +1418,88 @@
     #section1 .slide.mobile:nth-child(even) .bg {
         content: url('../img/mbook_shadow_right.png');
         z-index: 1;
+    }
+
+    /* ---- 모바일 section2 ----- */
+    #section2 .inner .list .item.tablet {
+        display: none;
+    }
+
+    #section2 .inner {
+        width: 88.8%;
+        padding-bottom: 20px;
+    }
+
+    #section2 .inner .title {
+        margin-bottom: 10px;
+        padding-top: 0;
+        justify-content: center;
+    }
+
+    #section2 .inner .title strong {
+        font-size: 50px;
+    }
+
+    #section2 .inner .list {
+        gap: 20px;
+        row-gap: 16px;
+        padding-bottom: 20px;
+    }
+
+    #section2 .inner .list .item {
+        width: 155px;
+        height: 224px;
+        padding: 16px 10px;
+    }
+
+    #section2 .inner .list .item:nth-child(even) {
+        transform: translateY(0);
+    }
+
+    #section2 .inner .list .item .movie {
+        font-size: 18px;
+    }
+
+    #section2 .inner .list .item .review .review_text {
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 8px;
+    }
+
+    #section2 .inner .list .item .review .name {
+        font-size: 13px;
+    }
+
+    #section2 .inner .list .item .rank .star img {
+        width: 18px;
+        height: 18px;
+        margin-right: -6px;
+    }
+
+    #section2 .inner .list .item .rank span {
+        font-size: 14px;
+    }
+
+    #section2 .inner .list .item .write {
+        width: 100px;
+        height: 20px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    #section2 .inner .pen_btn {
+        bottom: 40px;
+    }
+
+    #section2 .inner .pen_btn .pen_img {
+        width: 334px;
+    }
+
+    #section2 .inner .pen_btn h5 {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px;
+        margin-top: -5px;
     }
 
     /* ---- 모바일 section3 ----- */
