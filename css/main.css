@@ -463,18 +463,29 @@
     font-weight: 800;
 }
 
+/* ---- 섹션2 리스트 시작 ----- */
+#section2 .inner .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 #section2 .inner .list {
+    width: 55%;
+    height: 571px;
+    overflow: hidden;
     padding-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
-    gap: 85px;
-    row-gap: 60px;
+    justify-content: space-between;
+    row-gap: 50px;
 }
 
 #section2 .inner .list .item {
-    width: 235px;
-    height: 283px;
-    padding: 21px 15px;
+    width: 222px;
+    min-width: 210px;
+    height: 260px;
+    padding: 22px 20px;
     background-color: #FEE379;
     color: #333333;
     font-family: 'KyoboHandwriting2020ParkDoYeon';
@@ -486,25 +497,12 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-#section2 .inner .list .item:nth-child(even) {
+/* #section2 .inner .list .item:nth-child(even) {
     transform: translateY(20px);
-}
-
-#section2 .inner .list .item:nth-child(6) {
-    margin-left: 100px;
-    transform: translateY(0);
-}
-
-#section2 .inner .list .item:nth-child(7) {
-    transform: translateY(20px);
-}
-
-#section2 .inner .list .item:nth-child(8) {
-    transform: translateY(0);
-}
+} */
 
 #section2 .inner .list .item .movie {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -550,27 +548,18 @@
     padding-top: 5px;
 }
 
-#section2 .inner .list .item .write {
-    width: 175px;
-    height: 30px;
-    font-size: 16px;
-    line-height: 30px;
-    border: 1px solid #333333;
-    border-radius: 5px;
-    transition: 0.5s;
-}
-
-#section2 .inner .list .item .write:hover {
-    background-color: #fff;
-}
-
+/* ----- 섹션2 펜 ------ */
 #section2 .inner .pen_btn {
-    position: absolute;
-    bottom: 60px;
-    right: 80px;
+    transform: rotate(-45deg);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#section2 .inner .pen_btn:hover {
+    transform: rotate(-65deg);
 }
 
 #section2 .inner .pen_btn .pen_img {
@@ -583,11 +572,13 @@
 }
 
 #section2 .inner .pen_btn h5 {
+    width: 400px;
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
 }
 
-/*  섹션2 팝업 */
+/*  ---------- 섹션2 팝업 ---------*/
 #section2 .popup {
     width: 747px;
     height: 587px;
@@ -698,6 +689,10 @@
     border-radius: 5px;
     width: 200px;
     height: 50px;
+}
+
+#section2 .popup .wrap .write_btn:hover {
+    background-color: #7c0f14;
 }
 
 
@@ -1177,50 +1172,49 @@
 
 
     /* ---- 태블릿 section2 ----- */
-    #section2 .inner .list .item.pc {
-        display: none;
-    }
-
     #section2 .inner {
         width: 90.52%;
-        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section2 .inner > .content {
+        flex-direction: column;
+        padding-bottom: 80px;
     }
 
     #section2 .inner .title {
-        padding-top: 0;
+        margin-bottom: 40px;
     }
 
     #section2 .inner .list {
-        gap: 18px;
-        row-gap: 60px;
-        padding-bottom: 60px;
-        justify-content: center;
+        width: 100%;
+        height: auto;
+        row-gap: 54px;
     }
 
-    #section2 .inner .list .item:nth-child(even) {
-        transform: translateY(40px);
-    }
-
-    #section2 .inner .list .item:nth-child(6) {
-        margin-left: 0;
-        transform: translateY(0);
-    }
-
-    #section2 .inner .list .item:nth-child(4) {
-        transform: translateY(0);
-    }
-
-    #section2 .inner .list .item:nth-child(5) {
-        transform: translateY(40px);
+    #section2 .inner .list .item {
+        width: 30.66%;
+        max-width: 250px;
     }
 
     #section2 .inner .pen_btn {
+        width: 100%;
         position: absolute;
         bottom: 70px;
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%);
+        right: 0;
+        left: 0;
+        transform: none;
     }
+
+    #section2 .inner .pen_btn:hover {
+        transform: none;
+    }
+
+     #section2 .inner .pen_btn.active {
+        transform: rotate(-10deg);
+     }
 
     /* ---- 태블릿 section2 팝업 --- */
     #section2 .popup {
@@ -1563,23 +1557,19 @@
     }
 
     #section2 .inner .list {
-        gap: 20px;
         row-gap: 16px;
         padding-bottom: 20px;
     }
 
     #section2 .inner .list .item {
-        width: 155px;
-        height: 224px;
-        padding: 16px 10px;
-    }
-
-    #section2 .inner .list .item:nth-child(even) {
-        transform: translateY(0);
+        width: 47.74%;
+        min-width: 136px;
+        height: 215px;
+        padding: 18px 15px;
     }
 
     #section2 .inner .list .item .movie {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #section2 .inner .list .item .review .review_text {
@@ -1589,39 +1579,25 @@
     }
 
     #section2 .inner .list .item .review .name {
-        font-size: 13px;
-    }
-
-    #section2 .inner .list .item .rank .star img {
-        width: 18px;
-        height: 18px;
-        margin-right: -6px;
+        font-size: 14px;
     }
 
     #section2 .inner .list .item .rank span {
-        font-size: 14px;
-    }
-
-    #section2 .inner .list .item .write {
-        width: 100px;
-        height: 20px;
-        font-size: 13px;
-        line-height: 20px;
+        font-size: 16px;
     }
 
     #section2 .inner .pen_btn {
-        bottom: 40px;
+        bottom: 50px;
     }
 
     #section2 .inner .pen_btn .pen_img {
-        width: 334px;
+        width: 333px;
     }
 
     #section2 .inner .pen_btn h5 {
+        width: 300px;
         font-size: 14px;
-        font-weight: 500;
         padding: 5px;
-        margin-top: -5px;
     }
 
     /* ---- 태블릿 section2 팝업 */
@@ -1678,8 +1654,6 @@
         height: 80px;
         padding: 8px;
     }
-
-
 
     #section2 .popup .wrap .write_btn {
         font-size: 14px;
