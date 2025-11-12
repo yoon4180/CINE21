@@ -98,6 +98,10 @@
         padding: 0 20px;
     }
 
+    #section1 .coffee {
+        display: none;
+    }
+
     #section1 .inner .left {
         height: 400px;
         gap: 0;
@@ -201,7 +205,7 @@
     }
 
     #section2 .inner .list .item .review .name {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     #section2 .inner .list .item .rank span {

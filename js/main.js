@@ -14,6 +14,8 @@ window.onload = () => {
             // ✅ URL 해시 제거 (혹시 남아있으면)
             history.replaceState(null, null, ' ');
         },
+        responsiveWidth: 900,
+        afterResponsive: function (isResponsive) {}
     });//풀페이지 end
 
     // 📌헤더
