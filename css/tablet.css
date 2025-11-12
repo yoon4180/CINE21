@@ -38,6 +38,10 @@
         animation: none;
     }
 
+    #section0 .inner .cover_img:hover {
+        animation: none;
+    }
+
     #section0 .inner .content {
         width: 100%;
     }
@@ -194,11 +198,11 @@
     }
 
     #section3 .inner .overlay .text {
-        width: 86.81%;
+        width: 80%;
         align-items: center;
         text-align: center;
         top: auto;
-        bottom: 130px;
+        bottom: 15vh;
         right: 50%;
         transform: translateX(50%);
     }

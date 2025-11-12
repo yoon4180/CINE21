@@ -28,25 +28,30 @@
 
     /* slide2 */
     #section0 .inner {
-        width: 80%;
-        gap: 0;
+        width: 100%;
         transform: none;
-        top: 50%;
+        top: 16vh;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0;
     }
 
     #section0 .inner .content {
-        width: 100%;
-        min-width: 100%;
-        background-color: rgba(225, 228, 219, 0.7);
+        width: 80%;
+        min-width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        background-color: transparent;
         box-shadow: none;
         padding: 20px 12px;
         border-radius: 0 0 10px 10px;
     }
 
     #section0 #slide3 .inner .content {
-        background-color: rgba(201, 175, 141, 0.7)
+        background-color: transparent;
+        
     }
 
     #section0 .inner .content .text_wrap {
@@ -60,14 +65,13 @@
         background-color: transparent;
     }
 
-    .content .text_wrap ul li {
+    .content .text_wrap ul li:nth-child(n+5) {
         display: none;
     }
 
     #section0 .inner .cover_img {
-        width: 100%;
-        box-shadow: none;
-        border-radius: 10px 10px 0 0;
+        width: 50%;
+        border-radius: 10px;
         overflow: hidden;
     }
 
@@ -302,7 +306,7 @@
 
     #section3 .inner .overlay .text {
         width: 88.8%;
-        bottom: 70px;
+        bottom: 10vh;
     }
 
     #section3 .inner .overlay .text p {
@@ -345,7 +349,7 @@
 
     #section4 .inner .swiper-slide .poster {
         width: 100%;
-        height: 230px;
+
     }
 
     #section4 .inner .swiper-slide .poster strong {

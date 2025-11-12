@@ -14,8 +14,8 @@ window.onload = () => {
             // ✅ URL 해시 제거 (혹시 남아있으면)
             history.replaceState(null, null, ' ');
         },
-        // 900이하에서 풀페이지x 스크롤
-        responsiveWidth: 900,
+        // 800이하에서 풀페이지x 스크롤
+        responsiveWidth: 720,
         afterResponsive: function (isResponsive) {}
     });//풀페이지 end
 
@@ -104,8 +104,8 @@ window.onload = () => {
         },
         breakpoints: {
             0: {         // 0px 이상 ~ 499px
-                slidesPerView: 2.1,
-                spaceBetween: 13, // 필요하면 간격도 줄일 수 있음
+                slidesPerView: 1.5,
+                spaceBetween: 18, // 필요하면 간격도 줄일 수 있음
             },
             500: {       // 500px 이상 ~ 1024px
                 slidesPerView: 2.5,
