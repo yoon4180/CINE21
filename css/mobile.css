@@ -1,0 +1,466 @@
+/* --- 720 이하일 때(모바일 ver) --- */
+@media screen and (max-width: 720px) {
+
+    /* 세로 슬라이드 개수 */
+    .fp-right {
+        display: none;
+    }
+
+    /* 왼쪽 화살표 */
+    .fp-controlArrow.fp-prev {
+        width: 25px;
+        height: 33px;
+        left: 3px;
+    }
+
+    /* 오른쪽 화살표 */
+    .fp-controlArrow.fp-next {
+        width: 25px;
+        height: 33px;
+        right: 3px;
+    }
+
+    /* ---- 모바일 section0 ----- */
+    /* slide1 */
+    #section0 #slide1 .intro video {
+        width: 100%;
+    }
+
+    /* slide2 */
+    #section0 .inner {
+        width: 80%;
+        gap: 0;
+        transform: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #section0 .inner .content {
+        width: 100%;
+        min-width: 100%;
+        background-color: rgba(225, 228, 219, 0.7);
+        box-shadow: none;
+        padding: 20px 12px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    #section0 #slide3 .inner .content {
+        background-color: rgba(201, 175, 141, 0.7)
+    }
+
+    #section0 .inner .content .text_wrap {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        border-radius: none;
+    }
+
+    #section0 #slide3 .inner .content .text_wrap {
+        background-color: transparent;
+    }
+
+    .content .text_wrap ul li {
+        display: none;
+    }
+
+    #section0 .inner .cover_img {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
+    }
+
+    #section0 .inner .content .content_btn {
+        display: flex;
+        gap: 8px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #section0 .inner .content .content_btn .btn01,
+    #section0 .inner .content .content_btn .btn02 {
+        padding: 18px 0;
+        white-space: nowrap;
+    }
+
+    .btn01 {
+        flex: 4;
+    }
+
+    .btn02 {
+        flex: 3;
+    }
+
+    /* ---- 모바일 section1 ----- */
+    #section1 .inner {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #section1 .inner .left {
+        height: 400px;
+        gap: 0;
+        position: relative;
+    }
+
+    #section1 .inner .left .title {
+        max-width: 335px;
+        padding: 12px 14px;
+        position: absolute;
+        top: 0;
+        left: -20px;
+        transform: translateY(-70%);
+        z-index: 1;
+    }
+
+    #section1 .inner .right {
+        height: 500px;
+        gap: 12px;
+    }
+
+    #section1 .inner .right .content01 {
+        gap: 16px;
+    }
+
+    #section1 .inner .right .content01 img {
+        height: 110px;
+    }
+
+    #section1 .inner .right .content02 {
+        height: 180px;
+    }
+
+    #section1 .inner .right .content03 {
+        gap: 16px;
+    }
+
+    #section1 .inner .right .content03 p {
+        font-size: 14px;
+        max-height: 186px;
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    #section1 .inner .right .content03 img {
+        height: 186px;
+    }
+
+    #section1 .slide.mobile:nth-child(odd) .bg {
+        content: url('../img/mbook_shadow_left.png');
+        z-index: 1;
+    }
+
+    #section1 .slide.mobile:nth-child(even) .bg {
+        content: url('../img/mbook_shadow_right.png');
+        z-index: 1;
+    }
+
+    /* ---- 모바일 section2 ----- */
+    #section2 .inner .list .item.tablet {
+        display: none;
+    }
+
+    #section2 .inner {
+        width: 88.8%;
+        padding-bottom: 20px;
+    }
+
+    #section2 .inner .title {
+        margin-bottom: 10px;
+        padding-top: 0;
+        justify-content: center;
+    }
+
+    #section2 .inner .title strong {
+        font-size: 50px;
+    }
+
+    #section2 .inner .list {
+        row-gap: 16px;
+        padding-bottom: 20px;
+    }
+
+    #section2 .inner .list .item {
+        width: 47.74%;
+        min-width: 136px;
+        height: 215px;
+        padding: 18px 15px;
+    }
+
+    #section2 .inner .list .item .movie {
+        font-size: 16px;
+    }
+
+    #section2 .inner .list .item .review .review_text {
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 8px;
+    }
+
+    #section2 .inner .list .item .review .name {
+        font-size: 14px;
+    }
+
+    #section2 .inner .list .item .rank span {
+        font-size: 16px;
+    }
+
+    #section2 .inner .pen_btn {
+        bottom: 50px;
+    }
+
+    #section2 .inner .pen_btn .pen_img {
+        width: 333px;
+    }
+
+    #section2 .inner .pen_btn h5 {
+        width: 300px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    /* ---- 모바일 section2 팝업 */
+    #section2 .popup {
+        width: 334px;
+        height: 404px;
+    }
+
+    #section2 .popup .popup_close {
+        top: 12px;
+        right: 12px;
+    }
+
+    #section2 .popup .popup_close img {
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+
+    #section2 .popup .wrap {
+        padding: 35px 26px;
+    }
+
+    #section2 .popup .wrap .content {
+        gap: 16px;
+    }
+
+    #section2 .popup .wrap .content .item h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    #section2 .popup .wrap .content .item .title_search {
+        width: 100%;
+    }
+
+    #section2 .popup .wrap .content .item input {
+        width: 100%;
+        padding: 8px;
+    }
+
+    #section2 .popup .wrap .content .item .star img {
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+
+    #section2 .popup .wrap .content .item p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #section2 .popup .wrap .content .item textarea {
+        height: 80px;
+        padding: 8px;
+    }
+
+    #section2 .popup .wrap .write_btn {
+        font-size: 14px;
+        width: 130px;
+        height: 35px;
+    }
+
+    /* ---- 모바일 section3 ----- */
+    #section3 .inner>img {
+        width: 100%;
+        height: 72.48%;
+    }
+
+    #section3 .inner .overlay {
+        width: 100%;
+        height: 44.84%;
+        background: #000000;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+    }
+
+    #section3 .inner .overlay .text {
+        width: 88.8%;
+        bottom: 70px;
+    }
+
+    #section3 .inner .overlay .text p {
+        padding: 0 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    #section3 .inner .overlay .text .more_btn span {
+        font-size: 13px;
+        font-weight: 400;
+        color: #c4c4c4;
+    }
+
+    #section3 .inner .overlay .text .more_btn img {
+        width: 13px;
+        height: 13px;
+    }
+
+    /* ---- 모바일 section4 ----- */
+    #section4 .inner {
+        margin: 0 0 0 5.6%;
+    }
+
+    #section4 .inner .title {
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    #section4 .inner .title img {
+        width: 32px;
+        height: 40px;
+    }
+
+    #section4 .inner .boxoffice_slide {
+        padding: 10px;
+    }
+
+    #section4 .inner .swiper-slide .poster {
+        width: 100%;
+        height: 230px;
+    }
+
+    #section4 .inner .swiper-slide .poster strong {
+        font-size: 35px;
+        left: 2px;
+    }
+
+    #section4 .inner .swiper-slide .poster .overlay h5 {
+        padding: 15px 0;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    #section4 .inner .swiper-slide .poster img {
+        box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+    }
+
+    #section4 .content {
+        align-items: center;
+        margin-right: 20px;
+        gap: 5px;
+    }
+
+    #section4 .content button {
+        width: 110px;
+        height: 32px;
+    }
+
+    #section4 .inner .swiper-slide .content .rank {
+        gap: 4px;
+    }
+
+    #section4 .inner .swiper-slide .content .rank .star img {
+        width: 20px;
+        margin-right: -5px;
+    }
+
+    /* ---- 모바일 section5 ----- */
+    /* slide1 */
+    #section5 .inner>img {
+        width: 100%;
+        height: 49.26%;
+        position: absolute;
+        top: 19.45%;
+        left: 0;
+    }
+
+    #section5 .inner .overlay_btm {
+        height: 45.56%;
+        background: #000000;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 29%);
+    }
+
+    #section5 .inner .overlay {
+        display: block;
+        width: 100%;
+        height: 27.70%;
+        background: #000000;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+    }
+
+    #section5 .inner .slide_inner {
+        width: 88.8%;
+        gap: 0;
+        top: 70px;
+    }
+
+    #section5 .slide .text_wrap .category img {
+        width: 23px;
+        height: 23px;
+    }
+
+    #section5 .slide .text_wrap .first {
+        gap: 5px;
+    }
+
+    #section5 .slide .text_wrap .first .name strong {
+        font-size: 35px;
+    }
+
+    #section5 .slide .text_wrap .first .name p {
+        font-size: 25px;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap {
+        gap: 0px;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap p {
+        font-size: 14px;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap span {
+        font-size: 14px;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap img {
+        display: none;
+    }
+
+    #section5 .inner .slide_inner {
+        bottom: 60px;
+    }
+
+    #section5 .inner .slide_inner h5 {
+        font-size: 14px;
+    }
+
+    #section5 .list {
+        position: absolute;
+        bottom: 0;
+    }
+
+    #section5 .list .item .poster_image {
+        height: 160px;
+    }
+
+    #section5 .list .item strong {
+        font-size: 30px;
+        left: -8px;
+        bottom: 35px;
+    }
+}

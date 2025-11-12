@@ -1,0 +1,341 @@
+/* --- 1024 이하일 때(태블릿 ver) --- */
+@media screen and (max-width: 1024px) {
+
+    /* 왼쪽 화살표 */
+    .fp-controlArrow.fp-prev {
+        left: 10px;
+    }
+
+    /* 오른쪽 화살표 */
+    .fp-controlArrow.fp-next {
+        right: 10px;
+    }
+
+    /* ---- 태블릿 section0 ----- */
+    /* slide1 */
+    #section0 #slide1 .intro video {
+        width: 86.81%;
+        height: auto;
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* slide2 */
+    #section0 .inner {
+        width: 64.50%;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #section0 .inner .cover_img {
+        position: static;
+        animation: none;
+    }
+
+    #section0 .inner .content {
+        width: 100%;
+    }
+
+    #section0 .inner .content .text_wrap {
+        padding: 20px;
+    }
+
+    #section0 .inner .cover_img {
+        width: 72.86%;
+        left: 50%;
+    }
+
+    #section0 .inner .content .content_btn .btn01 {
+        padding: 15px;
+    }
+
+    #section0 .inner .content .content_btn .btn02 {
+        padding: 15px 17px;
+    }
+
+    /* ---- 태블릿 section1 ----- */
+    #section1 .slide {
+        display: none;
+    }
+
+    #section1 .slide.mobile {
+        display: block;
+        position: relative;
+    }
+
+    #section1 .slide.mobile:nth-child(odd) .bg {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        z-index: -1;
+    }
+
+    #section1 .slide.mobile:nth-child(even) .bg {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: -1;
+    }
+
+    #section1 .coffee {
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+
+    #section1 .inner {
+        max-width: 100%;
+        width: 69.30%;
+    }
+
+    #section1 .inner .left {
+        width: 100%;
+    }
+
+    #section1 .inner .right {
+        width: 100%;
+    }
+
+    #section1 #mslide4 .inner .right .content02 {
+        height: 376px;
+    }
+
+    #section1 #mslide4 .inner .right .content03 p {
+        width: 100%;
+    }
+
+
+    /* ---- 태블릿 section2 ----- */
+    #section2 .inner {
+        width: 90.52%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section2 .inner>.content {
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+
+    #section2 .inner .title {
+        margin-bottom: 40px;
+    }
+
+    #section2 .inner .content {
+        height: auto;
+    }
+
+    #section2 .inner .list {
+        width: 100%;
+        height: auto;
+        row-gap: 54px;
+    }
+
+    #section2 .inner .list .item {
+        width: 30.66%;
+        max-width: 250px;
+    }
+
+    #section2 .inner .pen_btn {
+        width: 100%;
+        position: absolute;
+        bottom: 70px;
+        right: 0;
+        left: 0;
+        transform: none;
+    }
+
+    #section2 .inner .pen_btn:hover {
+        transform: none;
+    }
+
+    #section2 .inner .pen_btn.active {
+        transform: rotate(-10deg);
+    }
+
+    /* ---- 태블릿 section2 팝업 --- */
+    #section2 .popup {
+        width: 578px;
+        height: 587px;
+    }
+
+    #section2 .popup .wrap {
+        padding: 50px;
+    }
+
+
+    /* ---- 태블릿 section3 ----- */
+    #section3 .inner>img {
+        width: 100%;
+        height: 69.85%;
+    }
+
+    #section3 .inner .overlay {
+        width: 100%;
+        height: 50.25%;
+        background: #000000;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 40%);
+        position: absolute;
+        top: auto;
+        bottom: 0;
+    }
+
+    #section3 .inner .overlay .text {
+        width: 86.81%;
+        align-items: center;
+        text-align: center;
+        top: auto;
+        bottom: 130px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    #section3 .inner .overlay .text p {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* ---- 태블릿 section4 ----- */
+    #section4 .inner .swiper-slide .poster .overlay {
+        display: none;
+    }
+
+    #section4 .inner {
+        margin: 0 0 0 6.5%;
+    }
+
+    #section4 .inner .title {
+        margin-bottom: 40px;
+    }
+
+    #section4 .inner .swiper-slide .poster {
+        width: 100%;
+        position: relative;
+    }
+
+    #section4 .inner .swiper-slide .poster img {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    #section4 .content {
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    #section4 .content button {
+        display: block;
+        width: 144px;
+        height: 36px;
+        border-radius: 8px;
+        border: 1px solid #B1060F;
+        background-color: #ffffff;
+        color: #B1060F;
+        margin-top: 7px;
+    }
+
+    /* ---- 태블릿 section5 ----- */
+    /* slide1 */
+    #section5 .inner>img {
+        width: 100%;
+        height: 70.18%;
+    }
+
+    #section5 .inner .overlay_btm {
+        height: 59.79%;
+        background: #000000;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 38%);
+    }
+
+    #section5 .inner .overlay {
+        display: none;
+    }
+
+    #section5 .inner .slide_inner {
+        width: 86.81%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #section5 .slide .text_wrap {
+        position: static;
+        gap: 2px;
+    }
+
+    #section5 .slide .text_wrap .category img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #section5 .slide .text_wrap .first {
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #section5 .slide .text_wrap .first .name {
+        gap: 12px;
+    }
+
+    #section5 .slide .text_wrap .first .name strong {
+        font-size: 50px;
+    }
+
+    #section5 .slide .text_wrap .first .name p {
+        font-size: 35px;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap {
+        gap: 14px;
+        align-items: flex-start;
+    }
+
+    #section5 .slide .text_wrap .first .info_wrap img {
+        width: 24px;
+        height: 24px;
+    }
+
+    #section5 .list {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        position: static;
+    }
+
+    #section5 .list .item {
+        width: 22.92%;
+    }
+
+    #section5 .list .item:nth-child(even) {
+        transform: translateY(30px);
+    }
+
+    #section5 .list .item .poster_image {
+        height: 238px;
+    }
+
+    #section5 .list .item strong {
+        font-size: 45px;
+        position: absolute;
+        left: -18px;
+        bottom: 20px;
+    }
+}
