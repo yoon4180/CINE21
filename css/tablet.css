@@ -329,7 +329,7 @@
     }
 
     #section5 .list .item .poster_image {
-        height: 238px;
+        height: auto;
     }
 
     #section5 .list .item strong {

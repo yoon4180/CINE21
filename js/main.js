@@ -14,6 +14,7 @@ window.onload = () => {
             // ✅ URL 해시 제거 (혹시 남아있으면)
             history.replaceState(null, null, ' ');
         },
+        // 900이하에서 풀페이지x 스크롤
         responsiveWidth: 900,
         afterResponsive: function (isResponsive) {}
     });//풀페이지 end

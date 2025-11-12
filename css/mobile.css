@@ -458,9 +458,7 @@
         bottom: 0;
     }
 
-    #section5 .list .item .poster_image {
-        height: 160px;
-    }
+    #section5 .list .item .poster_image {}
 
     #section5 .list .item strong {
         font-size: 30px;
